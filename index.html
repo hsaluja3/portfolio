@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harpreet Saluja | Product Portfolio</title>
+<title>Harpreet Saluja - Product Portfolio</title>
 <meta name="description" content="A product leadership portfolio told through product case studies.">
 <style>
 :root{
@@ -123,7 +123,15 @@ h2{font-size:clamp(38px,5vw,68px)}
 <div id="app">
 <div class="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="grid-bg"></div></div>
 <div id="cursor"></div><div id="dot"></div>
-<header class="top"><strong>HARPREET SALUJA</strong><span>PRODUCT PORTFOLIO</span></header>
+<header class="top"><strong>HARPREET SALUJA</strong><div class="top-actions"><button class="case-menu-trigger" id="caseMenuTrigger" type="button" aria-expanded="false" aria-controls="caseMenu">CASE STUDIES</button></div></header>
+<div class="case-menu" id="caseMenu" aria-hidden="true">
+ <button class="case-menu-backdrop" type="button" aria-label="Close case studies menu"></button>
+ <aside class="case-menu-panel" role="dialog" aria-modal="true" aria-labelledby="caseMenuTitle">
+  <div class="case-menu-head"><div><div class="case-menu-kicker">Navigate by capability</div><h2 id="caseMenuTitle">Case studies</h2></div><button class="case-menu-close" type="button" aria-label="Close case studies menu">CLOSE</button></div>
+  <p class="case-menu-intro">Choose a case study based on the product-management skills you want to review.</p>
+  <nav class="case-menu-list" id="caseMenuList" aria-label="Case studies"></nav>
+ </aside>
+</div>
 <main class="stage">
 
 <section class="slide active scope-slide">
@@ -150,110 +158,110 @@ h2{font-size:clamp(38px,5vw,68px)}
  </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-01" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">LRN · Case study 01</div>
-   <h2 class="reveal d2">Grow what already exists</h2>
-   <div class="case-meta reveal d3"><span class="pill">Growth</span><span class="pill">Customer discovery</span><span class="pill">Product expansion</span></div>
+   <h2 class="reveal d2">Grow an API product around customer workflows</h2>
+   <div class="case-meta reveal d3"><span class="pill">API strategy</span><span class="pill">Customer discovery</span><span class="pill">Product growth</span><span class="pill">Platform expansion</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Customers wanted to accomplish additional use cases by connecting LRN with their own systems and workflows, but the existing API product did not support all of those use cases.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Customers wanted to connect LRN with their internal systems and workflows, but the existing API product supported only a limited set of use cases.</p><p style="margin-top:10px">Requests initially appeared as individual integration needs. The broader opportunity was to understand the outcomes customers were trying to achieve and determine which reusable API capabilities could support them at scale.</p><p style="margin-top:10px">The challenge was to expand the product without creating a collection of narrowly tailored integrations that increased complexity without generating broader customer value.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I used customer conversations to understand the additional workflows customers were trying to accomplish, then introduced API capabilities to support those unmet needs.</p><p style="margin-top:10px">The decision was not simply to add more APIs. It was to understand what customers were trying to accomplish and expand the product around those needs.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I used customer conversations and integration requests to understand the workflows customers were trying to enable, where the existing APIs fell short, and which unmet needs appeared across multiple customers.</p><p style="margin-top:10px">Rather than respond to each request independently, I grouped the underlying use cases and prioritized API capabilities that could serve multiple customer workflows.</p><p style="margin-top:10px">I expanded the API product around those needs, balancing immediate customer value with a reusable platform direction. This allowed customers to integrate LRN more deeply into their existing technology ecosystems without making the product dependent on one-off solutions.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>What customers wanted</b><span>PROBLEM</span></div><div class="flow"><b>Unmet use cases</b><span>INSIGHT</span></div><div class="flow"><b>API expansion</b><span>DECISION</span></div><div class="flow"><b>Expanded product surface</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Existing APIs did not support important customer workflows</b><span>PROBLEM</span></div><div class="flow"><b>Individual requests revealed repeatable integration needs</b><span>INSIGHT</span></div><div class="flow"><b>Prioritize reusable APIs over one-off integrations</b><span>DECISION</span></div><div class="flow"><b>Expand the platform around customer outcomes</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><span class="outcome-metric">3×</span><span class="outcome-caption">API product growth</span></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">Product expansion is strongest when it starts with understanding what customers are trying to accomplish, not simply adding more capabilities.</div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The expanded capabilities allowed customers to support more use cases by connecting LRN with their existing systems and workflows.</p><p style="margin-top:10px">By turning recurring customer needs into reusable API capabilities, the initiative expanded the product’s value and contributed to <strong>3× API product growth</strong>.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>API growth comes from understanding what customers need to accomplish—not simply from increasing the number of endpoints.</p><p style="margin-top:10px">The strongest platform investments convert recurring integration needs into reusable capabilities that create value across multiple customers and workflows.</p></div></div>
    </div>
   </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-02" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">LRN · Case study 02</div>
-   <h2 class="reveal d2">Make a complex product easier to use</h2>
-   <div class="case-meta reveal d3"><span class="pill">Simplification</span><span class="pill">AI</span><span class="pill">SMB expansion</span></div>
+   <h2 class="reveal d2">Add simplicity without removing flexibility</h2>
+   <div class="case-meta reveal d3"><span class="pill">Product simplification</span><span class="pill">AI strategy</span><span class="pill">Customer segmentation</span><span class="pill">SMB expansion</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>LRN's existing products were flexible and powerful, but that flexibility also created complexity that could be a barrier for SMB customers.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Large enterprise customers valued LRN’s flexibility and configuration options and had the specialized resources to manage them.</p><p style="margin-top:10px">SMB customers often had fewer specialized resources. Lower adoption and higher support-query volumes showed that navigating the product’s tools, options, and workflows was making it harder for them to reach value.</p><p style="margin-top:10px">The challenge was to simplify the experience for SMBs without removing capabilities enterprise customers relied on.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I identified an opportunity to make the product more accessible to SMB customers by simplifying how they accomplished tasks.</p><p style="margin-top:10px">I introduced an AI-powered product integrated with the existing LRN products and tools. AI was the means to simplify the experience, not the reason to build the product.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I used segment-specific adoption and support patterns to identify a usability problem rather than a lack of product capability.</p><p style="margin-top:10px">I introduced an AI-powered product integrated with LRN’s existing products and tools. It gave users a simpler path to existing capabilities without replacing established workflows or removing configuration options.</p><p style="margin-top:10px">AI was the means of reducing complexity—not the reason to build the product. Although the need was surfaced through SMB challenges, the simpler experience also benefited enterprise customers.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Complex product</b><span>PROBLEM</span></div><div class="flow"><b>SMB friction</b><span>INSIGHT</span></div><div class="flow"><b>AI as the means</b><span>DECISION</span></div><div class="flow"><b>Simpler path to value</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Product complexity limited SMB adoption and increased support demand</b><span>PROBLEM</span></div><div class="flow"><b>SMBs needed a simpler path to capabilities enterprise customers valued</b><span>INSIGHT</span></div><div class="flow"><b>Add an integrated, AI-powered path to existing products and tools</b><span>DECISION</span></div><div class="flow"><b>Improve simplicity for both segments without removing flexibility</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><div class="outcome-highlight">Created a simpler way for SMB customers to get value from the existing LRN product experience.</div></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">AI can be most valuable when it removes complexity from an existing product rather than becoming a standalone feature looking for a problem.</div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The initiative gave SMB customers a simpler way to complete tasks and access LRN’s existing product capabilities.</p><p style="margin-top:10px">Integrating AI with the broader platform preserved the flexibility valued by enterprise customers while making complex capabilities easier to use across both segments.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>The same product can provide valuable flexibility to one customer segment while creating a barrier for another.</p><p style="margin-top:10px">AI can create meaningful value by simplifying how customers use an established product without reducing its underlying capabilities.</p></div></div>
    </div>
   </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-03" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">LRN · Case study 03</div>
    <h2 class="reveal d2">Fix the source of friction, not just the symptom</h2>
-   <div class="case-meta reveal d3"><span class="pill">Efficiency</span><span class="pill">Friction removal</span><span class="pill">Product judgment</span><span class="pill">Customer experience</span></div>
+   <div class="case-meta reveal d3"><span class="pill">Root-cause analysis</span><span class="pill">Product judgment</span><span class="pill">Cross-product leadership</span><span class="pill">Customer experience</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Newly reported customer issues were continuously being reported. Individual issues could look unrelated, making it easy to treat them as a queue of bugs rather than evidence of broader product problems.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>New customer issues were reported continuously. Although individual cases appeared unrelated, they could reveal recurring problems introduced by a theme, epic, workflow, or functional area.</p><p style="margin-top:10px">Issues marked as “not a product bug” could also indicate genuine friction caused by unclear UX or insufficient documentation.</p><p style="margin-top:10px">Without a consistent process across product teams, systemic causes were difficult to identify and prevent.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I combined product data, customer feedback, support issues, and technical and UX patterns to identify the underlying problems behind individual issues.</p><p style="margin-top:10px">I reviewed bugs closed as “not a bug,” had UX review them for potential UX issues, and reviewed whether documentation updates could remove recurring friction.</p><p style="margin-top:10px">Rather than prioritizing every issue independently, I prioritized the underlying problems and patterns.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I introduced a shared root-cause-analysis process across the product teams. Every fixed issue was tagged with its RCA and sub-cause.</p><p style="margin-top:10px">Teams also identified the theme or epic that introduced an issue—or the affected functional area when it was unrelated to new development.</p><p style="margin-top:10px">I created Jira dashboards that aggregated this data across teams, exposing recurring causes and high-friction areas that were otherwise distributed across individual tickets.</p><p style="margin-top:10px">For issues marked as “not a product bug,” I established a review process to identify potential UX issues or documentation gaps.</p><p style="margin-top:10px">These insights helped teams prioritize systemic improvements instead of treating every issue as an isolated defect.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Customer issues</b><span>PROBLEM</span></div><div class="flow"><b>Underlying patterns</b><span>INSIGHT</span></div><div class="flow"><b>Product / UX / docs</b><span>DECISION</span></div><div class="flow"><b>Friction addressed</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Individual issues obscured recurring customer friction</b><span>PROBLEM</span></div><div class="flow"><b>Consistent data across teams could expose systemic patterns</b><span>INSIGHT</span></div><div class="flow"><b>Introduce shared RCA tagging, dashboards, and issue reviews</b><span>DECISION</span></div><div class="flow"><b>Prioritize prevention and root-cause improvements</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><span class="outcome-metric">23% YoY</span><span class="outcome-caption">Reduction in newly reported customer issues, contributing to improved CSAT/NPS.</span></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">A strong product response to customer issues is often to solve the underlying pattern rather than optimize the bug queue.</div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>Product teams gained a shared view of why issues occurred, which changes introduced them, and where customers experienced recurring friction.</p><p style="margin-top:10px">Issues classified as “not a product bug” could still lead to UX or documentation improvements.</p><p style="margin-top:10px">This evidence supported better prioritization and contributed to a <strong>23% year-over-year reduction in newly reported customer issues</strong>, supporting improvements in customer satisfaction and NPS.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Resolving an issue helps one customer; understanding its root cause can improve the experience for everyone.</p><p style="margin-top:10px">Not every product issue requires a product change. Customer friction may be addressed more effectively through documentation, knowledge bases, UX guidance, or other supporting experiences.</p><p style="margin-top:10px">The goal is to understand the customer’s difficulty and address it through the most appropriate part of the overall product experience.</p></div></div>
    </div>
   </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-04" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">LRN · Case study 04</div>
    <h2 class="reveal d2">Performance is product value</h2>
-   <div class="case-meta reveal d3"><span class="pill">Performance</span><span class="pill">Roadmap prioritization</span><span class="pill">Customer value</span></div>
+   <div class="case-meta reveal d3"><span class="pill">Performance</span><span class="pill">Customer value</span><span class="pill">Roadmap prioritization</span><span class="pill">Technical collaboration</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>A strategic client surfaced a performance issue regarding campaign assignment times.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Assigning campaigns to more than 300,000 employees took over 30 hours for a strategic enterprise customer.</p><p style="margin-top:10px">Although the process ran only once a year, its scale and duration created a significant operational challenge for the customer’s Ethics and Compliance team.</p><p style="margin-top:10px">The issue also revealed a broader performance constraint in a workflow used by other large customers.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I realigned the roadmap to prioritize performance improvements in the workflow that mattered most to the strategic client—and would benefit every customer using it.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I adjusted the roadmap to prioritize performance improvements over planned feature work because the existing workflow was limiting customer value.</p><p style="margin-top:10px">Rather than address a single bottleneck, I worked with Engineering to examine the complete processing path. We introduced mechanisms for faster processing, removed bottlenecks, revisited existing code, and made infrastructure changes where needed.</p><p style="margin-top:10px">The goal was to improve the underlying capability so the solution benefited every customer running large campaign assignments—not only the strategic customer that surfaced the issue.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Strategic client feedback</b><span>PROBLEM</span></div><div class="flow"><b>Shared workflow performance gap</b><span>INSIGHT</span></div><div class="flow"><b>Roadmap realignment</b><span>DECISION</span></div><div class="flow"><b>Targeted performance improvements</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Campaign assignment took over 30 hours for 300,000+ employees</b><span>PROBLEM</span></div><div class="flow"><b>A strategic customer’s challenge exposed a broader performance constraint</b><span>INSIGHT</span></div><div class="flow"><b>Reprioritize the roadmap and address the complete processing path</b><span>DECISION</span></div><div class="flow"><b>Improve performance through processing, code, and infrastructure changes</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><span class="outcome-metric">4.5×</span><span class="outcome-caption">Faster campaign assignment times.</span></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lessons</div><div class="lesson-highlight"><p>Product leadership sometimes means changing the roadmap to solve the problems that matter the most, even when that means deprioritizing planned feature work.</p><p style="margin-top:10px">Also, a single customer’s feedback can reveal a broader product issue. The strongest response is to solve the underlying constraint in a way that improves the experience for everyone.</p></div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>Campaign assignment became <strong>4.5× faster</strong>, substantially reducing the time required to process large employee populations.</p><p style="margin-top:10px">The improvements addressed the strategic customer’s operational challenge while strengthening performance for other customers using the same workflow.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Performance is part of product value, even when a demanding workflow runs infrequently. For customers operating at enterprise scale, processing time can determine whether a capability is practical to use.</p><p style="margin-top:10px">A customer-specific challenge can also expose a broader product constraint. The strongest response is to improve the underlying capability in a way that benefits the wider customer base.</p></div></div>
    </div>
   </div>
 </section>
@@ -318,116 +326,116 @@ h2{font-size:clamp(38px,5vw,68px)}
  </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-07" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
-   <div class="eyebrow reveal d1">Pearl · Case study 07</div>
-   <h2 class="reveal d2">Turn complex pay rules into a no-code product</h2>
-   <div class="case-meta reveal d3"><span class="pill">0→1</span><span class="pill">Simplification</span><span class="pill">Automation</span><span class="pill">Rules engine</span></div>
+   <div class="eyebrow reveal d1">Pearl Technologies · Case study 07</div>
+   <h2 class="reveal d2">Turn complex pay rules into a configurable product</h2>
+   <div class="case-meta reveal d3"><span class="pill">0→1</span><span class="pill">No-code platform</span><span class="pill">Rules engine</span><span class="pill">Workflow automation</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Pay calculations were based on complex pay rules that were different for each company. Within each company, there were numerous complex rules that made pay calculation difficult to manage and scale.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Driver pay depended on complex rules that differed by company, driver, and individual trip—and evolved quickly with changing market conditions.</p><p style="margin-top:10px">Calculations had to account for agreed compensation rates, worker classification—employee or owner-operator—employment location, route complexity, time of year, taxes, statutory holidays, hourly or mileage-based pay, and single- or team-driver trips, among other factors.</p><p style="margin-top:10px">These variables could interact differently for each company, making pay processing difficult to manage and scale. The challenge was to support that complexity without creating separate product logic for every customer.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>Build a no-code pay rule and calculation engine that supported pay calculation for each driver and their trip while accommodating company-specific pay rules.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I led the development of a no-code pay-rule and pay-calculation engine that converted company-specific policies into configurable product capabilities.</p><p style="margin-top:10px">The engine evaluated rules at the driver and trip level, combining agreed compensation rates with worker classification, location, route, time of the year, tax obligations, statutory-holiday, and other configured rules.</p><p style="margin-top:10px">Rather than embed each customer’s requirements directly into the product, I separated configurable business rules from the underlying calculation process. Companies could combine rules to represent their pay models while using a shared calculation foundation.</p><p style="margin-top:10px">This created a consistent product capable of supporting complex pay structures without requiring a separate implementation for every customer.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Company-specific rules</b><span>PROBLEM</span></div><div class="flow"><b>Complex calculations</b><span>INSIGHT</span></div><div class="flow"><b>No-code engine</b><span>DECISION</span></div><div class="flow"><b>Configurable pay logic</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Pay depended on complex, rapidly evolving variables</b><span>PROBLEM</span></div><div class="flow"><b>Customer variation required configuration rather than separate product logic</b><span>INSIGHT</span></div><div class="flow"><b>Build a no-code pay-rule and calculation engine</b><span>DECISION</span></div><div class="flow"><b>Create a scalable foundation for complex driver-pay processing</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><div class="outcome-highlight">The pay rule and calculation engine became a core part of a faster, more scalable pay process.</div></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">Complex business rules can become a scalable product when they are turned into configurable capabilities rather than hard-coded processes.</div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The engine became a core part of a faster, more scalable driver-pay process.</p><p style="margin-top:10px">Through one configurable product, it supported company-specific calculations combining agreed compensation rates with worker classifications, employment locations, routes, and many other variables.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Complex business rules become more scalable when they are modeled as configurable components rather than embedded as customer-specific logic.</p><p style="margin-top:10px">A strong no-code product does not remove complexity. It organizes interacting rules so operational teams can manage them consistently.</p></div></div>
    </div>
   </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-08" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
-   <div class="eyebrow reveal d1">Pearl · Case study 08</div>
-   <h2 class="reveal d2">Use ML to catch what manual review misses</h2>
-   <div class="case-meta reveal d3"><span class="pill">ML-based AI</span><span class="pill">Efficiency</span><span class="pill">Fraud detection</span><span class="pill">Automation</span></div>
+   <div class="eyebrow reveal d1">Pearl Technologies · Case study 08</div>
+   <h2 class="reveal d2">Use ML to surface pay fraud before approval</h2>
+   <div class="case-meta reveal d3"><span class="pill">ML-based AI</span><span class="pill">Fraud detection</span><span class="pill">Efficiency</span><span class="pill">Automation</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Pay teams manually reviewed trip data as part of the pay process. The review was time-consuming and could still overlook fraud signals hidden in the data.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Customers reported potential driver-pay fraud that was difficult to identify through manual review.</p><p style="margin-top:10px">Some hourly drivers appeared to spend less time actively driving than expected while claiming the full number of hours. In other cases, mileage-based drivers took slightly longer routes, increasing their pay without materially changing arrival times.</p><p style="margin-top:10px">Trip-pay teams manually reviewed large volumes of geotagged trip data before calculating pay. This prolonged processing and resulted in staggered payments rather than completing pay at the end of the regular cycle.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>Build a pay calculation and ML-based AI trip fraud-detection system that could both improve the core payroll process and surface fraud signals from trip data.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I led the development of an ML-based fraud-detection capability within the driver-pay process.</p><p style="margin-top:10px">The product evaluated geotagged trip data as soon as each trip was completed, identifying activity that differed from expected trip and route patterns.</p><p style="margin-top:10px">Potential issues were surfaced to trip-pay teams for review, approval, or correction. Once a trip was finalized, it became an input to the pay-calculation process.</p><p style="margin-top:10px">This shifted fraud detection earlier in the workflow, reduced broad manual review at the end of the pay cycle, and kept people responsible for final decisions.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Trip data</b><span>PROBLEM</span></div><div class="flow"><b>Manual review</b><span>INSIGHT</span></div><div class="flow"><b>ML-based AI detection</b><span>DECISION</span></div><div class="flow"><b>Fraud signals</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Manual trip review delayed and staggered driver pay</b><span>PROBLEM</span></div><div class="flow"><b>Completed trip data could reveal anomalous driving patterns</b><span>INSIGHT</span></div><div class="flow"><b>Evaluate each trip with ML as soon as it was completed</b><span>DECISION</span></div><div class="flow"><b>Resolve flagged trips before pay calculation</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><span class="outcome-metric">60%</span><span class="outcome-caption">Faster driver pay calculation and processing, with fraud detection contributing to improved efficiency.</span></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">AI can create product value when it improves a core workflow while surfacing signals that are difficult to identify through manual processes.</div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The capability surfaced potential fraud immediately after trip completion, allowing trip-pay teams to focus on cases requiring attention rather than manually reviewing every trip at the end of the pay cycle.</p><p style="margin-top:10px">Finalized trip data could then move into pay calculation with fewer unresolved exceptions. This contributed to a <strong>60% faster driver-pay calculation and processing workflow</strong>, supporting more timely completion of the pay cycle.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>AI is most valuable when it turns complex data into timely, actionable decisions within an existing workflow.</p><p style="margin-top:10px">Evaluating trips when they are completed moves exception handling closer to the source of the problem. For high-impact decisions such as pay, AI should focus human attention while preserving appropriate review and approval controls.</p></div></div>
    </div>
   </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-09" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">Clickatell · Case study 09</div>
-   <h2 class="reveal d2">Product judgment: what to include—and what to exclude</h2>
+   <h2 class="reveal d2">Decide what belongs in the product—and what does not</h2>
    <div class="case-meta reveal d3"><span class="pill">Product judgment</span><span class="pill">Prioritization</span><span class="pill">Market response</span><span class="pill">Product strategy</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Chat channels continually introduced new capabilities, while customers and Sales were also requesting enhancements. Replicating every new capability would create a large roadmap without necessarily creating proportional customer value.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>The messaging market changed continuously as new chat channels emerged and existing channels introduced new capabilities. Customers and Sales also requested additional enhancements.</p><p style="margin-top:10px">These opportunities competed with broader product features that were either unrelated to channel support or created value across all supported channels.</p><p style="margin-top:10px">Supporting every new channel, replicating every channel capability, and accepting every enhancement request would create an expanding roadmap without necessarily producing proportional customer value.</p><p style="margin-top:10px">The challenge was to remain responsive to the market while protecting a coherent product direction and balancing channel-specific investments with capabilities that benefited the product more broadly.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I balanced market and channel evolution, customer needs, Sales feedback, enhancement requests, and product priorities.</p><p style="margin-top:10px">I did not automatically replicate everything new in each channel. I made deliberate decisions about what belonged in the product and what should be excluded.</p><p style="margin-top:10px">The goal was to prioritize capabilities based on customer value and product direction rather than simply responding to every market signal or request.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I evaluated new channels and channel-specific capabilities alongside customer needs, Sales feedback, enhancement requests, and broader cross-channel product priorities.</p><p style="margin-top:10px">Rather than automatically support every emerging channel or reproduce every capability, I made deliberate decisions about what should be prioritized, deferred, or excluded.</p><p style="margin-top:10px">I balanced the value of individual channel additions against investments that improved the experience across all channels or advanced other important areas of the product.</p><p style="margin-top:10px">This kept the roadmap focused while allowing the customer-engagement product to evolve with meaningful changes in the market.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Market signals</b><span>PROBLEM</span></div><div class="flow"><b>Customer + Sales requests</b><span>INSIGHT</span></div><div class="flow"><b>Include / exclude</b><span>DECISION</span></div><div class="flow"><b>Focused product direction</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>New channels, capabilities, and broader product needs competed for investment</b><span>PROBLEM</span></div><div class="flow"><b>Greater channel coverage and more features did not guarantee customer value</b><span>INSIGHT</span></div><div class="flow"><b>Prioritize, defer, or exclude based on value and strategic fit</b><span>DECISION</span></div><div class="flow"><b>Balance market responsiveness with a coherent cross-channel strategy</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><div class="outcome-highlight">Evolved the customer engagement product around capabilities with clearer customer value rather than chasing every available market feature.</div></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">Good product strategy requires deciding not only what to build, but what not to build.</div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The product evolved around new channels, channel capabilities, and broader features with clearer customer value rather than attempting to pursue every available opportunity.</p><p style="margin-top:10px">This created a more focused roadmap and balanced channel-specific additions with investments that strengthened the experience across the broader product.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Product strategy requires deciding what not to build as deliberately as deciding what to build.</p><p style="margin-top:10px">In a fast-moving platform market, strong product judgment means balancing new integrations and channel-specific requests with foundational capabilities that create value across the entire product.</p></div></div>
    </div>
   </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-10" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">Clickatell · Case study 10</div>
-   <h2 class="reveal d2">Turn AI into part of the customer journey</h2>
-   <div class="case-meta reveal d3"><span class="pill">AI</span><span class="pill">Customer experience</span><span class="pill">Journey design</span><span class="pill">Product integration</span></div>
+   <h2 class="reveal d2">Bring automation into the human-led journey</h2>
+   <div class="case-meta reveal d3"><span class="pill">AI</span><span class="pill">Agent productivity</span><span class="pill">Human-in-the-loop</span><span class="pill">Journey orchestration</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Clickatell had a separate AI chatbot capability. The opportunity was to make AI part of the broader customer engagement journey rather than leave it as a standalone chatbot.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Clickatell already sold chatbots as a separate, fully automated product without human-agent involvement. Meanwhile, human agents continued handling routine follow-on requests that existing chatbot workflows could complete.</p><p style="margin-top:10px">For example, after resolving a billing issue, an agent might learn that the customer also wanted to top up their mobile account or make a payment. Completing these actions manually consumed additional agent time.</p><p style="margin-top:10px">The opportunity was to connect the two products so automation could increase agent capacity without fragmenting the customer journey or removing human oversight.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I integrated the separate Clickatell AI chatbot as a full-fledged agent within the existing customer engagement journey.</p><p style="margin-top:10px">The journey could move from customer → AI, AI → human when needed, human → AI when needed or triggered, and ultimately human or AI → end.</p><p style="margin-top:10px">The product decision was to make AI part of one connected customer journey rather than create another standalone destination.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I integrated the existing chatbot product into the human-agent experience and enabled agents to trigger preconfigured automated workflows during a live conversation.</p><p style="margin-top:10px">For suitable requests, such as a mobile top-up or payment, the agent could hand control to the chatbot to complete the action and then receive the conversation back.</p><p style="margin-top:10px">The agent could track the workflow and take back control if the customer asked a question or needed assistance. This preserved continuity and human accountability while allowing automation to handle repeatable work.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Customer journey</b><span>PROBLEM</span></div><div class="flow"><b>AI capability</b><span>INSIGHT</span></div><div class="flow"><b>Human handoff</b><span>DECISION</span></div><div class="flow"><b>Connected journey</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Chatbots and human-agent support operated as separate experiences</b><span>PROBLEM</span></div><div class="flow"><b>Existing automated workflows could extend agent capacity</b><span>INSIGHT</span></div><div class="flow"><b>Let agents trigger, monitor, and interrupt chatbot workflows</b><span>DECISION</span></div><div class="flow"><b>Combine automation and human support in one journey</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><div class="outcome-highlight">AI became part of the overall customer engagement journey rather than a standalone chatbot.</div></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">The value of AI can come from how it fits into an end-to-end customer journey, not simply from the AI capability itself.</div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>Human agents could support more customers by delegating appropriate actions to existing chatbot workflows within the same conversation.</p><p style="margin-top:10px">The connected handoff model reused an established product capability while maintaining customer continuity, agent visibility, and the ability to intervene.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Existing capabilities can create new value when they are connected across product boundaries.</p><p style="margin-top:10px">Effective human-in-the-loop automation gives people control over when automation is used, visibility into its progress, and the ability to intervene when customer needs change.</p></div></div>
    </div>
   </div>
 </section>
 
-<section class="slide">
- <div class="inner case-layout">
+<section class="slide case-study-11" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">Loblaw · Case study 11</div>
    <h2 class="reveal d2">Modernize food safety across the business</h2>
@@ -435,20 +443,20 @@ h2{font-size:clamp(38px,5vw,68px)}
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Food safety work was fragmented across business units, with a mix of manual processes and disconnected digital tools. This created inconsistent workflows, limited visibility, and unnecessary effort for teams responsible for compliance.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Food-safety processes were fragmented across corporate business units and retail stores. Some steps were digital, while others depended on manual tools and disconnected workflows.</p><p style="margin-top:10px">This increased compliance turnaround times and made it difficult to see where teams were in the process. Delays could also affect how quickly contaminated products were recalled, removed from shelves, or prevented from being sold—and how reliably those actions were reported.</p><p style="margin-top:10px">The challenge was to create a consistent process across the business while accounting for store operations, compliance requirements, recall management, reporting, software, hardware, point-of-sale systems, and digital shelf labels.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I led the modernization of Food Safety Management as a unified digital product. I translated complex operational and compliance requirements into simpler end-to-end workflows, then owned the product strategy, roadmap, launch, and continuous improvement.</p><p style="margin-top:10px">I coordinated business stakeholders, software teams, and hardware vendors throughout delivery—turning product requirements into actionable plans while keeping the user journey, adoption, and operational reality at the center.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I led the modernization of Food Safety Management as a unified digital product, owning its strategy, roadmap, launch, and continuous improvement.</p><p style="margin-top:10px">To understand how the process worked in practice, I observed workflows in person—including inside retail stores—and worked with corporate business units, store teams, software and hardware vendors, and data-reporting teams.</p><p style="margin-top:10px">I translated their operational and compliance requirements into simpler end-to-end workflows. The solution supported food-item recalls and their associated reporting, improved process tracking, accelerated the removal of contaminated products, prevented recalled items from being sold at the point of sale, and displayed recall status on digital shelf labels.</p><p style="margin-top:10px">Throughout delivery, I coordinated the contributing teams and vendors while keeping usability, adoption, compliance, and retail operating realities at the centre of product decisions.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Fragmented digital and manual workflows</b><span>PROBLEM</span></div><div class="flow"><b>Operational and compliance requirements</b><span>INSIGHT</span></div><div class="flow"><b>Unified end-to-end food safety solution</b><span>DECISION</span></div><div class="flow"><b>Simpler, adoptable and trackable workflows across business units</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Fragmented digital and manual workflows across business units and stores</b><span>PROBLEM</span></div><div class="flow"><b>Delays and limited visibility increased operational and compliance risk</b><span>INSIGHT</span></div><div class="flow"><b>Unify recall management, store actions, controls, and reporting</b><span>DECISION</span></div><div class="flow"><b>Enable faster, visible action from recall initiation through completion</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-    <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><span class="outcome-metric">40%</span><span class="outcome-caption">Increase in operational efficiency, with improved regulatory compliance and user experience.</span></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight">Modernization succeeds when the product simplifies the full operational journey—not when it merely digitizes individual tasks. Adoption needs to be designed alongside the workflow through clear documentation, enablement, communication, and stakeholder readiness.</div></div>
+    <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The unified product increased operational efficiency by 40% while improving regulatory compliance, user experience, and visibility into where teams were in the process.</p><p style="margin-top:10px">It also enabled teams to manage food-item recalls and associated reporting through one connected process—accelerating product removal, preventing recalled items from being sold at the point of sale, and displaying recall status on digital shelf labels.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Modernization succeeds when the product simplifies and connects the full operational journey—not when it merely digitizes individual tasks.</p><p style="margin-top:10px">In operational products, effective discovery requires seeing the process where the work happens. Adoption must also be designed alongside the workflow through clear documentation, enablement, communication, and stakeholder readiness.</p></div></div>
    </div>
   </div>
 </section>
@@ -469,9 +477,9 @@ h2{font-size:clamp(38px,5vw,68px)}
 </section>
 
 </main>
+<div class="page-number" id="pageNumber" aria-hidden="true">01</div>
 <div class="progress"><i id="bar"></i></div>
 <div class="navdots" id="dots"></div>
-<div class="case-index" id="index">MY STORY</div>
 <div class="bottomhint">SCROLL / SWIPE · ↑ ↓</div>
 </div>
 
@@ -681,6 +689,152 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
 .scope-slide .inner{position:relative;z-index:1}.scope-slide:after{content:"";position:absolute;z-index:0;pointer-events:none;width:min(62vw,920px);aspect-ratio:1;right:-17vw;top:5%;border:1px solid rgba(208,181,106,.24);border-radius:50%;background:radial-gradient(circle,transparent 0 31%,rgba(208,181,106,.12) 31.1% 31.3%,transparent 31.4% 51%,rgba(186,200,247,.10) 51.1% 51.3%,transparent 51.4% 70%,rgba(208,181,106,.08) 70.1% 70.3%,transparent 70.4%);box-shadow:inset 0 0 0 48px rgba(208,181,106,.025),inset 0 0 0 145px rgba(186,200,247,.02)}
 @media(max-width:820px){.scope-slide:after{width:100vw;right:-44vw;top:18%}}
 
+/* Translucent navigation chrome keeps scrolling content legible while preserving context. */
+.slide:before{display:none}
+.page-number{
+ position:fixed;right:clamp(26px,5vw,76px);bottom:clamp(36px,6vh,74px);z-index:3;
+ pointer-events:none;font-family:Georgia,serif;font-size:clamp(100px,17vw,260px);
+ line-height:.7;color:rgba(243,240,232,.035);letter-spacing:-.1em;
+}
+.top-actions{display:flex;align-items:center;gap:22px}
+.case-menu-trigger,.case-menu-close{border:0;padding:0;background:transparent;color:var(--paper);cursor:pointer;font:9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.16em;text-transform:uppercase}
+.case-menu-trigger{padding-bottom:3px;border-bottom:1px solid rgba(228,166,117,.65)}
+.case-menu-trigger:hover,.case-menu-trigger:focus-visible,.case-menu-close:hover,.case-menu-close:focus-visible{color:var(--accent);outline:none}
+.case-menu{position:fixed;inset:0;z-index:80;visibility:hidden;pointer-events:none}
+.case-menu.open{visibility:visible;pointer-events:auto}
+.case-menu-backdrop{position:absolute;inset:0;width:100%;height:100%;border:0;background:rgba(8,10,14,.46);opacity:0;transition:opacity .28s ease;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.case-menu.open .case-menu-backdrop{opacity:1}
+.case-menu-panel{position:absolute;top:0;right:0;width:min(590px,100%);height:100%;overflow-y:auto;padding:clamp(28px,5vh,54px) clamp(24px,4vw,48px) 42px;background:rgba(20,22,28,.94);border-left:1px solid rgba(243,240,232,.15);transform:translateX(100%);transition:transform .4s var(--ease);-webkit-backdrop-filter:blur(24px) saturate(115%);backdrop-filter:blur(24px) saturate(115%)}
+.case-menu.open .case-menu-panel{transform:translateX(0)}
+.case-menu-head{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding-bottom:20px;border-bottom:1px solid rgba(243,240,232,.14)}
+.case-menu-kicker{margin-bottom:10px;color:rgb(208,181,106);font:9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.17em;text-transform:uppercase}
+.case-menu-head h2{font-size:clamp(38px,4vw,58px);line-height:.92}
+.case-menu-close{margin-top:5px;color:#aaa59d}
+.case-menu-intro{max-width:480px;margin:20px 0 10px;color:#b8b5af;font-size:14px;line-height:1.5}
+.case-menu-list{display:flex;flex-direction:column}
+.case-menu-item{display:grid;grid-template-columns:38px minmax(0,1fr);gap:14px;width:100%;padding:17px 14px;border:0;border-bottom:1px solid rgba(243,240,232,.12);background:transparent;color:var(--paper);text-align:left;cursor:pointer}
+.case-menu-item:hover,.case-menu-item:focus-visible{outline:none;background:linear-gradient(90deg,rgba(228,166,117,.08),transparent)}
+.case-menu-item.current{background:linear-gradient(90deg,rgba(208,181,106,.11),transparent)}
+.case-menu-number{padding-top:2px;color:var(--accent);font:11px ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em}
+.case-menu-title{display:block;font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.16;color:var(--paper)}
+.case-menu-skills{display:block;margin-top:8px;color:#aaa59d;font:8px/1.55 ui-monospace,SFMono-Regular,monospace;letter-spacing:.11em;text-transform:uppercase}
+.top{
+ top:0;left:0;right:0;
+ padding:23px clamp(20px,4vw,64px) 13px;
+ background:transparent;
+ -webkit-backdrop-filter:blur(18px) saturate(115%);
+ backdrop-filter:blur(18px) saturate(115%);
+}
+.stage:after{
+ content:"";position:fixed;left:0;right:0;bottom:0;height:58px;z-index:25;
+ pointer-events:none;border-top:1px solid rgba(243,240,232,.08);
+ background:transparent;
+ -webkit-backdrop-filter:blur(18px) saturate(115%);
+ backdrop-filter:blur(18px) saturate(115%);
+}
+.bottomhint{
+ left:50%;right:auto;transform:translateX(-50%);text-align:center;
+}
+.case-main-grid>.lesson-block{
+ --section-rule:rgb(198,156,200);
+}
+.case-main-grid>.case-block.lesson-block .label{
+ color:var(--section-rule)!important;
+}
+.case-main-grid>.lesson-block:before{
+ border-left-color:var(--section-rule)!important;
+ border-bottom-color:var(--section-rule)!important;
+}
+.case-head>.reasoning-panel .visual-label{
+ color:var(--accent)!important;font-size:10px!important;
+ letter-spacing:.16em!important;margin-bottom:13px!important;
+}
+.case-main-grid>.mobile-skills{
+ --skills-signal:rgb(208,181,106);
+ display:block;position:relative;margin:2px 0;padding:0 0 0 22px!important;
+ border:0!important;background:transparent!important;
+}
+.case-main-grid>.mobile-skills:before{
+ content:"";position:absolute;display:block;left:0;top:0;bottom:0;width:14px;
+ box-sizing:border-box;border-left:1px solid var(--skills-signal);
+ border-bottom:1px solid var(--skills-signal);border-bottom-left-radius:13px;
+}
+.case-main-grid>.mobile-skills .label{
+ color:var(--skills-signal)!important;font-size:10px;letter-spacing:.16em;margin-bottom:11px;
+}
+.case-main-grid>.mobile-skills p{
+ color:#d0cdc7;font:10px/1.7 ui-monospace,SFMono-Regular,monospace;
+ letter-spacing:.12em;text-transform:uppercase;
+}
+@media(max-width:820px){
+ .top{top:0;left:0;right:0;padding:17px 20px 12px}
+ .top-actions{gap:0}.top-actions>span{display:none}
+ .case-menu-panel{width:100%;padding:24px 22px 38px;border-left:0}
+ .case-menu-head h2{font-size:42px}.case-menu-intro{font-size:13px;margin-top:17px}
+ .case-menu-item{padding:15px 12px}.case-menu-title{font-size:18px}
+ .page-number{right:14px;bottom:25px;font-size:110px}
+ .stage:after{display:none}
+ .case-index,.bottomhint{display:none!important}
+
+ /* Reasoning joins the mobile narrative as a fifth, consistently styled section. */
+ .case-main-grid>.reasoning-panel{
+  --reasoning-signal:rgb(216,166,172);
+  position:relative;margin:2px 0;padding:0 0 0 22px!important;
+ }
+ .case-main-grid>.reasoning-panel:after{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:14px;
+  box-sizing:border-box;border-left:1px solid var(--reasoning-signal);
+  border-bottom:1px solid var(--reasoning-signal);border-bottom-left-radius:13px;
+ }
+ .case-main-grid>.reasoning-panel .visual-label{
+  color:var(--reasoning-signal)!important;margin:0 0 13px!important;
+ }
+ .case-main-grid>.reasoning-panel .case-visual{
+  background:transparent!important;border:0!important;box-shadow:none!important;
+ }
+ .case-main-grid>.reasoning-panel .case-visual:before{
+  display:none!important;
+ }
+ .case-main-grid>.reasoning-panel .visual-core{
+  margin:0!important;padding-left:28px!important;
+ }
+ .case-main-grid>.reasoning-panel .visual-core:before{
+  display:none!important;
+ }
+ .case-main-grid>.reasoning-panel .flow{
+  display:grid!important;grid-template-columns:minmax(0,1fr);
+  row-gap:5px;align-items:start;padding:10px 0!important;
+ }
+ .case-main-grid>.reasoning-panel .flow:before{
+  left:-28px!important;border-color:var(--reasoning-signal)!important;
+  color:var(--reasoning-signal)!important;
+ }
+ .case-main-grid>.reasoning-panel .flow b{
+  grid-column:1;grid-row:2;min-width:0;overflow-wrap:anywhere;
+ }
+ .case-main-grid>.reasoning-panel .flow span{
+  grid-column:1;grid-row:1;margin:0!important;padding:0!important;white-space:nowrap;
+  color:var(--reasoning-signal)!important;
+ }
+ .case-main-grid>.mobile-skills{
+  --skills-signal:rgb(208,181,106);
+  display:block;position:relative;margin:2px 0;padding:0 0 0 22px!important;
+  border:0!important;background:transparent!important;
+ }
+ .case-main-grid>.mobile-skills:before{
+  content:"";position:absolute;display:block;left:0;top:0;bottom:0;width:14px;
+  box-sizing:border-box;border-left:1px solid var(--skills-signal);
+  border-bottom:1px solid var(--skills-signal);border-bottom-left-radius:13px;
+ }
+ .case-main-grid>.mobile-skills .label{
+  color:var(--skills-signal)!important;font-size:10px;letter-spacing:.16em;margin-bottom:11px;
+ }
+ .case-main-grid>.mobile-skills p{
+  color:#d0cdc7;font:10px/1.7 ui-monospace,SFMono-Regular,monospace;
+  letter-spacing:.12em;text-transform:uppercase;
+ }
+}
+
 </style>
 
 <style>
@@ -700,29 +854,92 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
 (() => {
  const slides=[...document.querySelectorAll('.slide')],
  bar=document.getElementById('bar'), idxEl=document.getElementById('index'),
- dots=document.getElementById('dots'), cursor=document.getElementById('cursor'), dot=document.getElementById('dot');
- const names=['SCOPE','MY STORY','PRODUCT GROWTH, CUSTOMER DISCOVERY','SIMPLIFICATION / VALUE DELIVERY THROUGH AI','PRODUCT JUDGEMENT, CUSTOMER EXPERIENCE','CUSTOMER VALUE, PRIORITIZATION','PRODUCT STRATEGY, INFLUENCE WITHOUT AUTHORITY, CROSS-FUNCTIONAL ALIGNMENT','PRODUCT JUDGMENT','CUSTOMER EXPERIENCE','VALUE DELIVERY', 'PRODUCT JUDGMENT, MARKET RESPONSE, PRIORITIZATION','CUSTOMER JOURNEY','WORKFLOW MODERNIZATION','SYNTHESIS'];
+ dots=document.getElementById('dots'), pageNum=document.getElementById('pageNumber'),
+ cursor=document.getElementById('cursor'), dot=document.getElementById('dot'),
+ menuRoot=document.getElementById('caseMenu'), menuTrigger=document.getElementById('caseMenuTrigger'),
+ menuList=document.getElementById('caseMenuList');
+ const names=['SCOPE','MY STORY','CUSTOMER DISCOVERY · API PRODUCT STRATEGY · PLATFORM THINKING · GROWTH STRATEGY','CUSTOMER SEGMENTATION · PRODUCT SIMPLIFICATION · AI PRODUCT STRATEGY · CUSTOMER EXPERIENCE','ROOT-CAUSE ANALYSIS · PRODUCT JUDGMENT · CROSS-PRODUCT LEADERSHIP · CUSTOMER EXPERIENCE','ROADMAP PRIORITIZATION · TECHNICAL COLLABORATION · SYSTEMS THINKING · ENTERPRISE PRODUCT MANAGEMENT','0→1 PRODUCT DEVELOPMENT · PLATFORM STRATEGY · INFLUENCE WITHOUT AUTHORITY · INCREMENTAL DELIVERY · ROLLOUT STRATEGY','PRODUCT JUDGMENT · BUY VS. BUILD · TECHNICAL ANALYSIS · REPRIORITIZATION · ROADMAP ADJUSTMENT','0→1 PRODUCT DEVELOPMENT · PLATFORM PRODUCT MANAGEMENT · DOMAIN MODELLING · SYSTEMS THINKING','AI PRODUCT STRATEGY · DATA-PRODUCT MANAGEMENT · WORKFLOW OPTIMIZATION · PRODUCT JUDGMENT','PRODUCT STRATEGY · PRODUCT JUDGMENT · PRIORITIZATION · MARKET ANALYSIS','PRODUCT INTEGRATION · CUSTOMER JOURNEY DESIGN · CUSTOMER EXPERIENCE · SYSTEMS THINKING','FIELD DISCOVERY · CROSS-FUNCTIONAL LEADERSHIP · WORKFLOW DESIGN · CUSTOMER EXPERIENCE · ADOPTION STRATEGY','SYNTHESIS'];
+ const mobile=matchMedia('(max-width:820px)');
 
- /* Reasoning becomes a left-rail companion to the case title, leaving the right side as a clean narrative flow. */
- document.querySelectorAll('.case-layout').forEach(layout=>{
+ function menuIsOpen(){return menuRoot&&menuRoot.classList.contains('open')}
+ function openMenu(){
+  if(!menuRoot||!menuTrigger)return;
+  menuRoot.classList.add('open');menuRoot.setAttribute('aria-hidden','false');
+  menuTrigger.setAttribute('aria-expanded','true');
+  const currentItem=menuList&&menuList.querySelector('.current');
+  (currentItem||menuRoot.querySelector('.case-menu-item'))?.focus();
+ }
+ function closeMenu(returnFocus=true){
+  if(!menuRoot||!menuTrigger)return;
+  menuRoot.classList.remove('open');menuRoot.setAttribute('aria-hidden','true');
+  menuTrigger.setAttribute('aria-expanded','false');
+  if(returnFocus)menuTrigger.focus();
+ }
+ function renderCaseMenu(){
+  if(!menuList)return;
+  menuList.innerHTML='';
+  slides.forEach((slide,slideIndex)=>{
+   if(!slide.matches('[class*="case-study-"]'))return;
+   const caseNumber=slide.className.match(/case-study-(\d+)/)?.[1]||'';
+   const title=slide.querySelector('h2')?.textContent.trim()||`Case study ${caseNumber}`;
+   const item=document.createElement('button');
+   item.type='button';item.className='case-menu-item';item.dataset.slideIndex=slideIndex;
+   const number=document.createElement('span');number.className='case-menu-number';number.textContent=caseNumber;
+   const detail=document.createElement('span');
+   const heading=document.createElement('span');heading.className='case-menu-title';heading.textContent=title;
+   const skills=document.createElement('span');skills.className='case-menu-skills';skills.textContent=names[slideIndex]||'';
+   detail.append(heading,skills);item.append(number,detail);
+   item.addEventListener('click',()=>{goTo(slideIndex);closeMenu(false)});
+   menuList.appendChild(item);
+  });
+ }
+ menuTrigger?.addEventListener('click',()=>menuIsOpen()?closeMenu():openMenu());
+ menuRoot?.querySelector('.case-menu-backdrop')?.addEventListener('click',()=>closeMenu());
+ menuRoot?.querySelector('.case-menu-close')?.addEventListener('click',()=>closeMenu());
+
+ function placeReasoning(layout){
   const head=layout.querySelector('.case-head');
   const reasoning=layout.querySelector('.reasoning-panel');
   const meta=head&&head.querySelector('.case-meta');
   const main=layout.querySelector('.case-main-grid');
+  const decision=main&&main.querySelector('.decision-panel');
+  if(!head||!reasoning)return;
+  if(mobile.matches&&decision)decision.insertAdjacentElement('afterend',reasoning);
+  else if(meta)meta.insertAdjacentElement('afterend',reasoning);
+  else head.appendChild(reasoning);
+ }
+
+ /* Keep reasoning beside the title on desktop, but after decisions in the mobile reading order. */
+ document.querySelectorAll('.case-layout').forEach(layout=>{
+  const main=layout.querySelector('.case-main-grid');
   const bottom=layout.querySelector('.case-bottom');
-  if(head&&reasoning){
-   if(meta) meta.insertAdjacentElement('afterend',reasoning);
-   else head.appendChild(reasoning);
-  }
   if(main&&bottom){
    [...bottom.children].forEach(section=>main.appendChild(section));
    bottom.remove();
   }
+  if(main&&!main.querySelector('.mobile-skills')){
+   const slide=layout.closest('.slide');
+   const skillText=names[slides.indexOf(slide)];
+   if(skillText){
+    const skills=document.createElement('div');
+    skills.className='case-block mobile-skills';
+    const label=document.createElement('div');
+    label.className='label';
+    label.textContent='Product Management Skills Applied';
+    const copy=document.createElement('p');
+    copy.textContent=skillText;
+    skills.append(label,copy);
+    main.appendChild(skills);
+   }
+  }
+  placeReasoning(layout);
  });
+ const refreshReasoningOrder=()=>{document.querySelectorAll('.case-layout').forEach(placeReasoning);update()};
+ if(mobile.addEventListener)mobile.addEventListener('change',refreshReasoningOrder);
+ else mobile.addListener(refreshReasoningOrder);
 
  let current=0;
  let wheelLocked=false, wheelTotal=0, wheelTimer=0, touchStartY=null;
- const mobile=matchMedia('(max-width:820px)');
  let touchScrollStart=0, boundaryDistance=0;
  function longSection(){return slides[current].scrollHeight>slides[current].clientHeight+2;}
  function addBoundaryDistance(delta){
@@ -746,7 +963,16 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
    s.setAttribute('aria-hidden',n===current?'false':'true');
   });
   if(bar) bar.style.transform=`scaleY(${slides.length>1?current/(slides.length-1):1})`;
-  if(idxEl) idxEl.textContent=names[current]||`CASE ${current}`;
+  if(pageNum) pageNum.textContent=String(current+1).padStart(2,'0');
+  if(idxEl){
+   idxEl.textContent=names[current]||`CASE ${current}`;
+   idxEl.hidden=slides[current].matches('[class*="case-study-"]');
+  }
+  menuList?.querySelectorAll('.case-menu-item').forEach(item=>{
+   const selected=Number(item.dataset.slideIndex)===current;
+   item.classList.toggle('current',selected);
+   if(selected)item.setAttribute('aria-current','page');else item.removeAttribute('aria-current');
+  });
   [...dots.children].forEach((d,n)=>d.classList.toggle('active',n===current));
  }
  function fitSlides(){
@@ -767,10 +993,12 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
   boundaryDistance=0;
   current=next;
   update();
-  if(slides[current].matches('.case-study-05,.case-study-06'))slides[current].scrollTop=0;
+  if(slides[current].matches('.case-study-01,.case-study-02,.case-study-03,.case-study-04,.case-study-05,.case-study-06,.case-study-07,.case-study-08,.case-study-09,.case-study-10,.case-study-11'))slides[current].scrollTop=0;
  }
  renderDots();
+ renderCaseMenu();
  addEventListener('wheel',e=>{
+  if(menuIsOpen())return;
   if(mobile.matches){
    if(wheelLocked){e.preventDefault();return;}
    if(!canLeave(e.deltaY)){boundaryDistance=0;return;}
@@ -784,7 +1012,7 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
    }
    return;
   }
-  if(slides[current].matches('.case-study-05,.case-study-06')&&!canLeave(e.deltaY)){
+  if(slides[current].matches('.case-study-01,.case-study-02,.case-study-03,.case-study-04,.case-study-05,.case-study-06,.case-study-07,.case-study-08,.case-study-09,.case-study-10,.case-study-11')&&!canLeave(e.deltaY)){
    boundaryDistance=0;
    return;
   }
@@ -800,11 +1028,13 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
   }
  },{passive:false});
  addEventListener('touchstart',e=>{
+  if(menuIsOpen()){touchStartY=null;return}
   touchStartY=e.touches.length===1?e.touches[0].clientY:null;
   touchScrollStart=slides[current].scrollTop;
  },{passive:true});
  addEventListener('touchcancel',()=>{touchStartY=null},{passive:true});
  addEventListener('touchend',e=>{
+  if(menuIsOpen()){touchStartY=null;return}
   if(touchStartY===null)return;
   const delta=touchStartY-e.changedTouches[0].clientY;
   touchStartY=null;
@@ -817,6 +1047,10 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
   if(Math.abs(delta)>=50)goTo(current+(delta>0?1:-1));
  },{passive:true});
  addEventListener('keydown',e=>{
+  if(menuIsOpen()){
+   if(e.key==='Escape'){e.preventDefault();closeMenu()}
+   return;
+  }
   if(mobile.matches){
    const direction=['ArrowDown','PageDown',' '].includes(e.key)?1:['ArrowUp','PageUp'].includes(e.key)?-1:0;
    if(direction&&e.repeat&&canLeave(direction)){e.preventDefault();return;}
