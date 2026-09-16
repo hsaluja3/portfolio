@@ -132,29 +132,43 @@ h2{font-size:clamp(38px,5vw,68px)}
   <nav class="case-menu-list" id="caseMenuList" aria-label="Case studies"></nav>
  </aside>
 </div>
+<div class="deep-dive-modal" id="licensingDeepDive" aria-hidden="true">
+ <button class="deep-dive-backdrop" type="button" aria-label="Close technical deep dive"></button>
+ <article class="deep-dive-panel" role="dialog" aria-modal="true" aria-labelledby="licensingDeepDiveTitle">
+  <div class="deep-dive-head"><div><div class="deep-dive-kicker">Case study 01 · Technical deep dive</div><h2 id="licensingDeepDiveTitle">Designing customer-level licensing across distributed sites</h2></div><button class="deep-dive-close" type="button" aria-label="Close technical deep dive">CLOSE</button></div>
+  <section class="deep-dive-section"><div class="label">The technical problem</div><p>Most customers operated a single site, while a smaller group had multiple sites across regional data stores.</p><p>Customer agreements and purchased entitlements existed at the customer level, but product consumption occurred within individual sites. The platform did not yet define how entitlements, consumption, and restrictions should operate when one customer had multiple sites.</p><p>The challenge was to establish a licensing model that preserved the commercial agreement while operating consistently across distributed customer environments.</p></section>
+  <section class="deep-dive-section"><div class="label">The trade-off</div><p>Two models were considered:</p><ul><li>Give each site access to the customer’s complete set of entitlements and manage its consumption independently.</li><li>Treat the customer’s purchased entitlements as one shared pool, with consumption calculated and restrictions enforced across all sites.</li></ul><p>The first model was simpler to implement, but aggregate usage across the customer’s sites could exceed what the customer had purchased.</p><p>The shared-pool model preserved the commercial meaning of the agreement but introduced greater technical complexity. Consumption needed to be calculated across regional environments, shared limits enforced across sites, and the experience needed to account for licensing information synchronizing between environments.</p><p>Executives selected the shared-pool model because it provided stronger control and a consistent customer-level licensing model.</p></section>
+  <section class="deep-dive-section"><div class="label">My product role</div><p>I worked with Engineering, Data Governance, and business stakeholders to make the trade-off and its implications visible before a decision was made.</p><p>After the shared-pool model was approved, I translated the direction into product requirements covering customer-level consumption, consistent enforcement of shared limits, regional data-handling constraints, synchronization of licensing and consumption information, and the experience as information moved between environments.</p></section>
+  <section class="deep-dive-section"><div class="label">Technical product lesson</div><p>A commercially coherent rule can create significant distributed-systems complexity. Technical product leadership requires exposing that complexity before a decision is made, helping business and technical stakeholders evaluate the trade-off, and translating the approved commercial model into clear and enforceable platform behaviour.</p></section>
+  <section class="deep-dive-section deep-dive-skills"><div class="label">Technical product skills applied</div><p>Technical product leadership · Distributed systems thinking · Trade-off analysis · Data governance · Cross-functional alignment</p></section>
+ </article>
+</div>
 <main class="stage">
 
 <section class="slide active scope-slide">
  <div class="inner scope-layout">
   <div class="scope-lead reveal d1">
    <div class="eyebrow">Senior Product Manager</div>
-   <h2>The scope I lead across</h2>
+   <h2>I turn complex product problems into scalable customer and business value.</h2>
   </div>
   <div class="scope-copy reveal d2">
-   <p class="scope-intro">10+ years of product leadership, grounded in software engineering.</p>
-   <p>I lead complex B2B SaaS products and internal platforms across 0→1 development, modernization, APIs and integrations, AI-enabled experiences, growth, and adoption.</p>
-   <p>My role spans the full product lifecycle: understanding the problem, setting strategy, making trade-offs, aligning Product, Engineering, UX, and business teams, then carrying the work through delivery, launch, adoption and continuous improvement.</p>
+   <p class="scope-intro">With 10+ years of product leadership grounded in software engineering, I build and scale B2B SaaS products and internal platforms.</p>
+   <p>My experience spans 0→1 development, APIs and integrations, AI-enabled experiences, platform modernization, and complex enterprise workflows. I connect customer needs and commercial strategy with technical reality, aligning Product, Engineering, UX, Sales, and operational teams from strategy through rollout and adoption.</p>
+   <p>My product initiatives have delivered measurable business and customer value by expanding product adoption and growth, reducing operational effort, strengthening revenue controls, and making complex workflows faster and easier to use.</p>
   </div>
  </div>
 </section>
 
-<section class="slide">
- <div class="inner hero-grid">
-  <div>
-   <div class="eyebrow reveal d1">My story</div>
-   <h1 class="reveal d2">I build products users find useful and valuable.</h1>
-   <p class="hero-quote reveal d3">“A product becomes valuable when it makes a meaningful problem easier to solve.”</p>
+<section class="slide featured-slide">
+ <div class="inner">
+  <div class="eyebrow reveal d1">Selected work</div>
+  <h2 class="reveal d2">Three stories that show how I lead product</h2>
+  <div class="featured-grid reveal d3">
+   <button class="featured-card" type="button" data-case-number="01"><span class="featured-number">01</span><strong>Build and roll out a licensing platform</strong><small>0→1 Product Development · Platform Strategy · Influence Without Authority · Distributed Systems Thinking · Trade-Off Analysis · Cross-Functional Alignment · Incremental Delivery · Rollout Strategy</small></button>
+   <button class="featured-card" type="button" data-case-number="02"><span class="featured-number">02</span><strong>Change direction when the solution is wrong</strong><small>Product judgment · Technical analysis · Reprioritization · Roadmap adjustment</small></button>
+   <button class="featured-card" type="button" data-case-number="06"><span class="featured-number">03</span><strong>Use AI to simplify a complex product and unlock growth</strong><small>Customer Segmentation · Product Simplification · AI Product Strategy · Customer Experience</small></button>
   </div>
+  <p class="featured-note reveal d4">Explore all eleven projects through the Case Studies menu, or continue scrolling.</p>
  </div>
 </section>
 
@@ -162,25 +176,26 @@ h2{font-size:clamp(38px,5vw,68px)}
  <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">LRN · Case study 01</div>
-   <h2 class="reveal d2">Grow an API product around customer workflows</h2>
-   <div class="case-meta reveal d3"><span class="pill">API strategy</span><span class="pill">Customer discovery</span><span class="pill">Product growth</span><span class="pill">Platform expansion</span></div>
+   <h2 class="reveal d2">Build and roll out a CRM-integrated provisioning, entitlement, and licensing platform</h2>
+   <div class="case-meta reveal d3"><span class="pill">0→1</span><span class="pill">Platform strategy</span><span class="pill">Influence without authority</span><span class="pill">Incremental delivery</span><span class="pill">Rollout</span></div>
   </div>
   <div class="case-main-grid">
    <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Customers wanted to connect LRN with their internal systems and workflows, but the existing API product supported only a limited set of use cases.</p><p style="margin-top:10px">Requests initially appeared as individual integration needs. The broader opportunity was to understand the outcomes customers were trying to achieve and determine which reusable API capabilities could support them at scale.</p><p style="margin-top:10px">The challenge was to expand the product without creating a collection of narrowly tailored integrations that increased complexity without generating broader customer value.</p></div>
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Provisioning on LRN’s mature platform was digital but disconnected from the CRM. After a product was sold, someone still had to manually select the corresponding platform options. Licensing was available only at a high level and did not support granular entitlement or access-control management.</p><p style="margin-top:10px">Although the platform generally supported what Sales offered, customer purchases could not be translated consistently into detailed platform access, usage limits, and restrictions. This created operational complexity and allowed some customers to use products beyond their purchased entitlements, resulting in revenue leakage.</p><p style="margin-top:10px">Solving this required more than connecting two existing workflows. We needed to connect CRM agreements with platform provisioning, entitlements, licenses, usage, restrictions, and access controls while accounting for the platform’s technical model and preserving Sales’ commercial flexibility.</p><p style="margin-top:10px">The solution depended on alignment across Sales, Revenue Operations, Data Governance, Product, Engineering, Delivery, and Support. Each group had different priorities, constraints, decision rights, and ownership.</p></div>
    </div>
    <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I used customer conversations and integration requests to understand the workflows customers were trying to enable, where the existing APIs fell short, and which unmet needs appeared across multiple customers.</p><p style="margin-top:10px">Rather than respond to each request independently, I grouped the underlying use cases and prioritized API capabilities that could serve multiple customer workflows.</p><p style="margin-top:10px">I expanded the API product around those needs, balancing immediate customer value with a reusable platform direction. This allowed customers to integrate LRN more deeply into their existing technology ecosystems without making the product dependent on one-off solutions.</p></div>
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p><strong>Deliver value through two parallel tracks.</strong> I separated capabilities that could be released quickly from changes requiring deeper product, data, and platform work. For existing customers, we introduced non-restrictive information and controls that made overuse visible, helping them monitor their consumption while more granular restrictions were developed. In parallel, cross-functional teams continued working on the broader licensing transformation and enforceable controls.</p><p style="margin-top:10px"><strong>Include licensing from the start for new commercial offerings.</strong> Any new product or capability introduced as a Sales offering was incorporated into the entitlement and licensing model from launch. This applied to both new and existing customers, preventing new offerings from adding to the legacy licensing gap while the broader transition continued.</p><p style="margin-top:10px"><strong>Define entitlement enforcement as product behaviour.</strong> I identified scenarios in which customers could exceed or game their entitlements. This required decisions about how consumption would be calculated, when restrictions would apply, how exceptions would be handled, and what information customers and administrators would see. I worked with stakeholders to secure agreement or approval before translating the selected behaviours into product requirements.</p><p style="margin-top:10px"><strong>Use technical analysis to guide licensing decisions.</strong> Where platform constraints created multiple implementation options, I worked with Engineering and Data Governance to define the alternatives, dependencies, regional data considerations, and customer-experience implications. I brought recommendations to the appropriate stakeholders for agreement or executive approval, then converted the selected direction into actionable product requirements.</p><p style="margin-top:10px"><strong>Distribute licensing capabilities across the appropriate product roadmaps.</strong> The solution depended on capabilities owned by multiple product areas. I identified the required dependencies and worked with peer product managers to incorporate licensing work into their roadmaps while they balanced existing commitments.</p><p style="margin-top:10px"><strong>Split the rollout strategy for new and existing customers.</strong> New customers entered the automated provisioning and licensing model immediately. Existing customers first received visibility into their consumption and overuse, then transitioned to granular restrictions at renewal. This delivered value without unexpectedly restricting active customers and created a controlled point to review their agreements and entitlements.</p></div>
    </div>
    <div class="case-panel reasoning-panel">
     <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Existing APIs did not support important customer workflows</b><span>PROBLEM</span></div><div class="flow"><b>Individual requests revealed repeatable integration needs</b><span>INSIGHT</span></div><div class="flow"><b>Prioritize reusable APIs over one-off integrations</b><span>DECISION</span></div><div class="flow"><b>Expand the platform around customer outcomes</b><span>DIRECTION</span></div></div>
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>CRM-disconnected provisioning and high-level licensing controls</b><span>PROBLEM</span></div><div class="flow"><b>Purchases could not be translated into enforceable access and usage limits</b><span>INSIGHT</span></div><div class="flow"><b>Build a granular, CRM-integrated entitlement and licensing model</b><span>DECISION</span></div><div class="flow"><b>Deliver early value through phased delivery and strategic rollout</b><span>DIRECTION</span></div></div>
   </div>
    </div>
   </div>
   <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The expanded capabilities allowed customers to support more use cases by connecting LRN with their existing systems and workflows.</p><p style="margin-top:10px">By turning recurring customer needs into reusable API capabilities, the initiative expanded the product’s value and contributed to <strong>3× API product growth</strong>.</p></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>API growth comes from understanding what customers need to accomplish—not simply from increasing the number of endpoints.</p><p style="margin-top:10px">The strongest platform investments convert recurring integration needs into reusable capabilities that create value across multiple customers and workflows.</p></div></div>
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The initiative aligned senior business stakeholders and product teams around a shared model connecting CRM agreements with platform provisioning, entitlements, licenses, usage, restrictions, and access controls.</p><p style="margin-top:10px">Connecting new customers to the automated licensing model immediately closed the revenue-leakage path for that segment by aligning their platform access and usage controls with what they had purchased.</p><p style="margin-top:10px">Existing customers received non-restrictive information and controls that made overuse visible, allowing them to monitor and correct their consumption while more granular restrictions were developed. The renewal-based transition strategy provided a controlled path for addressing existing-customer leakage as those restrictions became available.</p><p style="margin-top:10px">Licensing new commercial offerings from launch prevented additional gaps from entering the platform. Together, phased delivery and the split rollout strategy delivered immediate value while establishing a path to stronger controls across the wider customer base.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Platform controls cannot be designed independently of the commercial model. An unrestricted platform may give Sales greater flexibility, but enforceable licensing requires clearer decisions about how products are defined, packaged, sold, and governed.</p><p style="margin-top:10px">Strong platform strategy therefore requires commercial, product, and technical decisions to evolve together. When change spans stakeholders, product roadmaps, and existing customers, phased delivery and a deliberate rollout are essential parts of the solution rather than activities that follow implementation.</p></div></div>
+   <button class="technical-deep-dive-trigger reveal d5" type="button" aria-haspopup="dialog" aria-controls="licensingDeepDive"><span>TECHNICAL DEEP DIVE</span><strong>Designing customer-level licensing across distributed sites</strong><i aria-hidden="true">OPEN ↗</i></button>
    </div>
   </div>
 </section>
@@ -189,114 +204,6 @@ h2{font-size:clamp(38px,5vw,68px)}
  <div class="inner case-layout" style="margin:0 auto;transform:none">
   <div class="case-head">
    <div class="eyebrow reveal d1">LRN · Case study 02</div>
-   <h2 class="reveal d2">Add simplicity without removing flexibility</h2>
-   <div class="case-meta reveal d3"><span class="pill">Product simplification</span><span class="pill">AI strategy</span><span class="pill">Customer segmentation</span><span class="pill">SMB expansion</span></div>
-  </div>
-  <div class="case-main-grid">
-   <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Large enterprise customers valued LRN’s flexibility and configuration options and often had specialized resources to manage them.</p><p style="margin-top:10px">SMB customers typically had fewer specialized resources. Lower product adoption, higher support-query volumes, weaker sales in the SMB market, and feedback from lost opportunities indicated that the product’s complexity made it harder for these customers to understand, adopt, and reach value from its capabilities.</p><p style="margin-top:10px">The challenge was to simplify the experience for SMBs without removing the flexibility enterprise customers relied on.</p></div>
-   </div>
-   <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I combined evidence from segment-level sales, lost opportunities, product adoption, support patterns, and customer feedback to identify a usability problem—not a lack of product capability.</p><p style="margin-top:10px">I introduced an AI-powered experience integrated with LRN’s existing products and tools. It provided a simpler path to established capabilities without replacing existing workflows or removing configuration options.</p><p style="margin-top:10px">AI was the means of reducing complexity—not the reason to build the product. Although SMB performance surfaced the need, the simpler experience could create value for both SMB and enterprise customers.</p></div>
-   </div>
-   <div class="case-panel reasoning-panel">
-    <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Product complexity constrained SMB adoption, supportability, and sales</b><span>PROBLEM</span></div><div class="flow"><b>Multiple signals showed that SMBs needed a simpler path to value</b><span>INSIGHT</span></div><div class="flow"><b>Add an integrated, AI-powered path to existing products and tools</b><span>DECISION</span></div><div class="flow"><b>Improve simplicity for both segments without removing flexibility</b><span>DIRECTION</span></div></div>
-  </div>
-   </div>
-  </div>
-  <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The initiative gave SMB customers a simpler way to complete tasks and access LRN’s existing product capabilities.</p><p style="margin-top:10px">Integrating AI with the broader platform preserved the flexibility valued by enterprise customers while making complex capabilities easier to use across both segments.</p><p style="margin-top:10px">The success of this first AI-powered experience also created confidence and a foundation for pursuing additional agentic-AI opportunities across the product.</p></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>The same product can provide valuable flexibility to one customer segment while creating a barrier for another. Product decisions become stronger when sales outcomes, lost opportunities, adoption data, support demand, and customer feedback are evaluated together.</p><p style="margin-top:10px">AI can create meaningful value by simplifying how customers use an established product without reducing its underlying capabilities.</p><p style="margin-top:10px">A successful first AI experience can create more than immediate customer value. It builds evidence, organizational confidence, and a product foundation for pursuing broader, higher-value agentic-AI opportunities.</p></div></div>
-   </div>
-  </div>
-</section>
-
-<section class="slide case-study-03" style="align-items:flex-start;overflow-y:auto">
- <div class="inner case-layout" style="margin:0 auto;transform:none">
-  <div class="case-head">
-   <div class="eyebrow reveal d1">LRN · Case study 03</div>
-   <h2 class="reveal d2">Fix the source of friction, not just the symptom</h2>
-   <div class="case-meta reveal d3"><span class="pill">Root-cause analysis</span><span class="pill">Product judgment</span><span class="pill">Cross-product leadership</span><span class="pill">Customer experience</span></div>
-  </div>
-  <div class="case-main-grid">
-   <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>New customer issues were reported continuously. Although individual cases appeared unrelated, they could reveal recurring problems introduced by a theme, epic, workflow, or functional area.</p><p style="margin-top:10px">Issues marked as “not a product bug” could also indicate genuine friction caused by unclear UX or insufficient documentation.</p><p style="margin-top:10px">Without a consistent process across product teams, systemic causes were difficult to identify and prevent.</p></div>
-   </div>
-   <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I introduced a shared root-cause-analysis process across the product teams. Every fixed issue was tagged with its RCA and sub-cause.</p><p style="margin-top:10px">Teams also identified the theme or epic that introduced an issue—or the affected functional area when it was unrelated to new development.</p><p style="margin-top:10px">I created Jira dashboards that aggregated this data across teams, exposing recurring causes and high-friction areas that were otherwise distributed across individual tickets.</p><p style="margin-top:10px">For issues marked as “not a product bug,” I established a review process to identify potential UX issues or documentation gaps.</p><p style="margin-top:10px">These insights helped teams prioritize systemic improvements instead of treating every issue as an isolated defect.</p></div>
-   </div>
-   <div class="case-panel reasoning-panel">
-    <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Individual issues obscured recurring customer friction</b><span>PROBLEM</span></div><div class="flow"><b>Consistent data across teams could expose systemic patterns</b><span>INSIGHT</span></div><div class="flow"><b>Introduce shared RCA tagging, dashboards, and issue reviews</b><span>DECISION</span></div><div class="flow"><b>Prioritize prevention and root-cause improvements</b><span>DIRECTION</span></div></div>
-  </div>
-   </div>
-  </div>
-  <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>Product teams gained a shared view of why issues occurred, which changes introduced them, and where customers experienced recurring friction.</p><p style="margin-top:10px">Issues classified as “not a product bug” could still lead to UX or documentation improvements.</p><p style="margin-top:10px">This evidence supported better prioritization and contributed to a <strong>23% year-over-year reduction in newly reported customer issues</strong>, supporting improvements in customer satisfaction and NPS.</p></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Resolving an issue helps one customer; understanding its root cause can improve the experience for everyone.</p><p style="margin-top:10px">Not every product issue requires a product change. Customer friction may be addressed more effectively through documentation, knowledge bases, UX guidance, or other supporting experiences.</p><p style="margin-top:10px">The goal is to understand the customer’s difficulty and address it through the most appropriate part of the overall product experience.</p></div></div>
-   </div>
-  </div>
-</section>
-
-<section class="slide case-study-04" style="align-items:flex-start;overflow-y:auto">
- <div class="inner case-layout" style="margin:0 auto;transform:none">
-  <div class="case-head">
-   <div class="eyebrow reveal d1">LRN · Case study 04</div>
-   <h2 class="reveal d2">Performance is product value</h2>
-   <div class="case-meta reveal d3"><span class="pill">Performance</span><span class="pill">Customer value</span><span class="pill">Roadmap prioritization</span><span class="pill">Technical collaboration</span></div>
-  </div>
-  <div class="case-main-grid">
-   <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Assigning campaigns to more than 300,000 employees took over 30 hours for a strategic enterprise customer.</p><p style="margin-top:10px">Although the process ran only once a year, its scale and duration created a significant operational challenge for the customer’s Ethics and Compliance team.</p><p style="margin-top:10px">The issue also revealed a broader performance constraint in a workflow used by other large customers.</p></div>
-   </div>
-   <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I adjusted the roadmap to prioritize performance improvements over planned feature work because the existing workflow was limiting customer value.</p><p style="margin-top:10px">Rather than address a single bottleneck, I worked with Engineering to examine the complete processing path. We introduced mechanisms for faster processing, removed bottlenecks, revisited existing code, and made infrastructure changes where needed.</p><p style="margin-top:10px">The goal was to improve the underlying capability so the solution benefited every customer running large campaign assignments—not only the strategic customer that surfaced the issue.</p></div>
-   </div>
-   <div class="case-panel reasoning-panel">
-    <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Campaign assignment took over 30 hours for 300,000+ employees</b><span>PROBLEM</span></div><div class="flow"><b>A strategic customer’s challenge exposed a broader performance constraint</b><span>INSIGHT</span></div><div class="flow"><b>Reprioritize the roadmap and address the complete processing path</b><span>DECISION</span></div><div class="flow"><b>Improve performance through processing, code, and infrastructure changes</b><span>DIRECTION</span></div></div>
-  </div>
-   </div>
-  </div>
-  <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>Campaign assignment became <strong>4.5× faster</strong>, substantially reducing the time required to process large employee populations.</p><p style="margin-top:10px">The improvements addressed the strategic customer’s operational challenge while strengthening performance for other customers using the same workflow.</p></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Performance is part of product value, even when a demanding workflow runs infrequently. For customers operating at enterprise scale, processing time can determine whether a capability is practical to use.</p><p style="margin-top:10px">A customer-specific challenge can also expose a broader product constraint. The strongest response is to improve the underlying capability in a way that benefits the wider customer base.</p></div></div>
-   </div>
-  </div>
-</section>
-
-<section class="slide case-study-05" style="align-items:flex-start;overflow-y:auto">
- <div class="inner case-layout" style="margin:0 auto;transform:none">
-  <div class="case-head">
-   <div class="eyebrow reveal d1">LRN · Case study 05</div>
-   <h2 class="reveal d2">Build and roll out a CRM-integrated provisioning, entitlement, and licensing platform</h2>
-   <div class="case-meta reveal d3"><span class="pill">0→1</span><span class="pill">Platform strategy</span><span class="pill">Influence without authority</span><span class="pill">Incremental delivery</span><span class="pill">Rollout</span></div>
-  </div>
-  <div class="case-main-grid">
-   <div class="case-panel problem-panel">
-    <div class="case-block reveal d3"><div class="label">The problem</div><p>Provisioning on LRN’s mature platform was manual, while entitlement management existed only at a high level. Although the platform generally supported what Sales offered, it lacked granular controls to ensure customer usage remained within purchased products and licenses—creating operational complexity, overuse, and revenue-leakage risks.</p><p style="margin-top:10px">Solving this required more than workflow automation. We needed to connect CRM agreements with platform provisioning, entitlements, licenses, and access controls while accounting for the platform’s technical model and preserving Sales’ commercial flexibility.</p><p style="margin-top:10px">The solution depended on alignment across Sales, Revenue Operations, Data Governance, Product, Engineering, Delivery, and Support—each with different priorities, constraints, and ownership.</p></div>
-   </div>
-   <div class="case-panel decision-panel">
-    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I led the work as a platform transformation, aligning VPs and Directors across Sales, Revenue Operations, Data Governance, and Product without direct authority. I created a shared view of the journey from an offering in the CRM to the access customers received, making gaps, dependencies, and tradeoffs visible.</p><p style="margin-top:10px">The solution also crossed multiple product areas. I worked with other product managers to prioritize licensing-related capabilities within their roadmaps, connecting their teams’ work to the broader entitlement strategy while balancing their existing commitments.</p><p style="margin-top:10px">Rather than digitizing the manual process, I drove a more granular entitlement and licensing model that connected customer purchases with platform access. It provided a foundation for automation and stronger controls without unnecessarily restricting how Sales constructed offerings.</p><p style="margin-top:10px">I separated capabilities that could be delivered quickly from work requiring deeper product, data, and platform changes. This allowed us to release immediate improvements while more complex capabilities progressed across multiple roadmaps.</p><p style="margin-top:10px">I also treated rollout as part of the strategy. <strong>New customers entered the automated process immediately, while existing customers transitioned at renewal</strong>—allowing agreements and entitlements to be reviewed without disrupting active customers.</p></div>
-   </div>
-   <div class="case-panel reasoning-panel">
-    <div class="case-visual reveal d4">
-   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Manual provisioning and limited entitlement controls</b><span>PROBLEM</span></div><div class="flow"><b>Customer purchase limits could not be consistently enforced</b><span>INSIGHT</span></div><div class="flow"><b>Granular, CRM-integrated model across product roadmaps</b><span>DECISION</span></div><div class="flow"><b>Early value through a staged, renewal-based rollout</b><span>DIRECTION</span></div></div>
-  </div>
-   </div>
-  </div>
-  <div class="case-bottom">
-   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The initiative aligned senior business stakeholders and product teams around a shared model connecting CRM agreements with platform provisioning, entitlements, licenses, and access controls.</p><p style="margin-top:10px">Provisioning was automated for new customers, reducing manual configuration and strengthening the foundation for controlling product overuse and revenue leakage. Sequencing simpler capabilities ahead of complex dependencies allowed the organization to deliver value sooner while progressing the broader platform transformation.</p><p style="margin-top:10px">New customers adopted the automated model immediately, while existing customers received a controlled transition path at renewal. The result balanced commercial flexibility, platform scalability, operational practicality, and customer continuity.</p></div></div>
-   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Complex platform change requires influence across both organizational and product boundaries. Alignment is not only about securing senior stakeholder support—it also means helping peer product managers understand shared dependencies and make room for enabling work within their roadmaps.</p><p style="margin-top:10px">Strong platform strategy connects commercial intent with enforceable capabilities, sequences immediate value alongside longer-term foundations, and treats customer transition as part of the product itself.</p></div></div>
-   </div>
-  </div>
-</section>
-
-<section class="slide case-study-06" style="align-items:flex-start;overflow-y:auto">
- <div class="inner case-layout" style="margin:0 auto;transform:none">
-  <div class="case-head">
-   <div class="eyebrow reveal d1">LRN · Case study 06</div>
    <h2 class="reveal d2">Change direction when the solution does not solve the problem</h2>
    <div class="case-meta reveal d3"><span class="pill">Product judgment</span><span class="pill">Buy vs. build</span><span class="pill">Technical analysis</span><span class="pill">Reprioritization</span><span class="pill">Roadmap adjustment</span></div>
   </div>
@@ -324,6 +231,114 @@ h2{font-size:clamp(38px,5vw,68px)}
    <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Product judgment means changing direction when evidence shows that a committed solution will not deliver the intended outcome.</p><p style="margin-top:10px">Stopping the wrong work is only part of the decision. Product leadership must also adjust the roadmap and redirect investment toward practical alternatives that solve the original customer and business problem.</p></div></div>
   </div>
  </div>
+</section>
+
+<section class="slide case-study-03" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
+  <div class="case-head">
+   <div class="eyebrow reveal d1">LRN · Case study 03</div>
+   <h2 class="reveal d2">Grow an API product around customer workflows</h2>
+   <div class="case-meta reveal d3"><span class="pill">API strategy</span><span class="pill">Customer discovery</span><span class="pill">Product growth</span><span class="pill">Platform expansion</span></div>
+  </div>
+  <div class="case-main-grid">
+   <div class="case-panel problem-panel">
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Customers wanted to connect LRN with their internal systems and workflows, but the existing API product supported only a limited set of use cases.</p><p style="margin-top:10px">Requests initially appeared as individual integration needs. The broader opportunity was to understand the outcomes customers were trying to achieve and determine which reusable API capabilities could support them at scale.</p><p style="margin-top:10px">The challenge was to expand the product without creating a collection of narrowly tailored integrations that increased complexity without generating broader customer value.</p></div>
+   </div>
+   <div class="case-panel decision-panel">
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I used customer conversations and integration requests to understand the workflows customers were trying to enable, where the existing APIs fell short, and which unmet needs appeared across multiple customers.</p><p style="margin-top:10px">Rather than respond to each request independently, I grouped the underlying use cases and prioritized API capabilities that could serve multiple customer workflows.</p><p style="margin-top:10px">I expanded the API product around those needs, balancing immediate customer value with a reusable platform direction. This allowed customers to integrate LRN more deeply into their existing technology ecosystems without making the product dependent on one-off solutions.</p></div>
+   </div>
+   <div class="case-panel reasoning-panel">
+    <div class="case-visual reveal d4">
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Existing APIs did not support important customer workflows</b><span>PROBLEM</span></div><div class="flow"><b>Individual requests revealed repeatable integration needs</b><span>INSIGHT</span></div><div class="flow"><b>Prioritize reusable APIs over one-off integrations</b><span>DECISION</span></div><div class="flow"><b>Expand the platform around customer outcomes</b><span>DIRECTION</span></div></div>
+  </div>
+   </div>
+  </div>
+  <div class="case-bottom">
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The expanded capabilities allowed customers to support more use cases by connecting LRN with their existing systems and workflows.</p><p style="margin-top:10px">By turning recurring customer needs into reusable API capabilities, the initiative expanded the product’s value and contributed to <strong>3× API product growth</strong>.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>API growth comes from understanding what customers need to accomplish—not simply from increasing the number of endpoints.</p><p style="margin-top:10px">The strongest platform investments convert recurring integration needs into reusable capabilities that create value across multiple customers and workflows.</p></div></div>
+   </div>
+  </div>
+</section>
+
+<section class="slide case-study-04" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
+  <div class="case-head">
+   <div class="eyebrow reveal d1">LRN · Case study 04</div>
+   <h2 class="reveal d2">Fix the source of friction, not just the symptom</h2>
+   <div class="case-meta reveal d3"><span class="pill">Root-cause analysis</span><span class="pill">Product judgment</span><span class="pill">Cross-product leadership</span><span class="pill">Customer experience</span></div>
+  </div>
+  <div class="case-main-grid">
+   <div class="case-panel problem-panel">
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>New customer issues were reported continuously. Although individual cases appeared unrelated, they could reveal recurring problems introduced by a theme, epic, workflow, or functional area.</p><p style="margin-top:10px">Issues marked as “not a product bug” could also indicate genuine friction caused by unclear UX or insufficient documentation.</p><p style="margin-top:10px">Without a consistent process across product teams, systemic causes were difficult to identify and prevent.</p></div>
+   </div>
+   <div class="case-panel decision-panel">
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I introduced a shared root-cause-analysis process across the product teams. Every fixed issue was tagged with its RCA and sub-cause.</p><p style="margin-top:10px">Teams also identified the theme or epic that introduced an issue—or the affected functional area when it was unrelated to new development.</p><p style="margin-top:10px">I created Jira dashboards that aggregated this data across teams, exposing recurring causes and high-friction areas that were otherwise distributed across individual tickets.</p><p style="margin-top:10px">For issues marked as “not a product bug,” I established a review process to identify potential UX issues or documentation gaps.</p><p style="margin-top:10px">These insights helped teams prioritize systemic improvements instead of treating every issue as an isolated defect.</p></div>
+   </div>
+   <div class="case-panel reasoning-panel">
+    <div class="case-visual reveal d4">
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Individual issues obscured recurring customer friction</b><span>PROBLEM</span></div><div class="flow"><b>Consistent data across teams could expose systemic patterns</b><span>INSIGHT</span></div><div class="flow"><b>Introduce shared RCA tagging, dashboards, and issue reviews</b><span>DECISION</span></div><div class="flow"><b>Prioritize prevention and root-cause improvements</b><span>DIRECTION</span></div></div>
+  </div>
+   </div>
+  </div>
+  <div class="case-bottom">
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>Product teams gained a shared view of why issues occurred, which changes introduced them, and where customers experienced recurring friction.</p><p style="margin-top:10px">Issues classified as “not a product bug” could still lead to UX or documentation improvements.</p><p style="margin-top:10px">This evidence supported better prioritization and contributed to a <strong>23% year-over-year reduction in newly reported customer issues</strong>, supporting improvements in customer satisfaction and NPS.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>Resolving an issue helps one customer; understanding its root cause can improve the experience for everyone.</p><p style="margin-top:10px">Not every product issue requires a product change. Customer friction may be addressed more effectively through documentation, knowledge bases, UX guidance, or other supporting experiences.</p><p style="margin-top:10px">The goal is to understand the customer’s difficulty and address it through the most appropriate part of the overall product experience.</p></div></div>
+   </div>
+  </div>
+</section>
+
+<section class="slide case-study-05" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
+  <div class="case-head">
+   <div class="eyebrow reveal d1">LRN · Case study 05</div>
+   <h2 class="reveal d2">Performance is product value</h2>
+   <div class="case-meta reveal d3"><span class="pill">Performance</span><span class="pill">Customer value</span><span class="pill">Roadmap prioritization</span><span class="pill">Technical collaboration</span></div>
+  </div>
+  <div class="case-main-grid">
+   <div class="case-panel problem-panel">
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Assigning campaigns to more than 300,000 employees took over 30 hours for a strategic enterprise customer.</p><p style="margin-top:10px">That customer ran the process once a year, but its scale and duration created a significant operational challenge for its Ethics and Compliance team. Other customers could run campaign assignments multiple times throughout the year, depending on how they planned their Ethics and Compliance campaigns.</p><p style="margin-top:10px">The concern therefore revealed a broader performance constraint. Processing time could create a high-impact annual event for one customer and a recurring operational burden for others.</p></div>
+   </div>
+   <div class="case-panel decision-panel">
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I adjusted the roadmap to prioritize performance improvements over planned feature work because the existing workflow was limiting customer value.</p><p style="margin-top:10px">Rather than address a single bottleneck, I worked with Engineering to examine the complete processing path. We introduced mechanisms for faster processing, removed bottlenecks, revisited existing code, and made infrastructure changes where needed.</p><p style="margin-top:10px">The goal was to improve the underlying capability so the solution benefited every customer running large campaign assignments—not only the strategic customer that surfaced the issue.</p></div>
+   </div>
+   <div class="case-panel reasoning-panel">
+    <div class="case-visual reveal d4">
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Campaign assignment took over 30 hours for 300,000+ employees</b><span>PROBLEM</span></div><div class="flow"><b>A strategic customer’s challenge exposed a broader performance constraint</b><span>INSIGHT</span></div><div class="flow"><b>Reprioritize the roadmap and address the complete processing path</b><span>DECISION</span></div><div class="flow"><b>Improve performance through processing, code, and infrastructure changes</b><span>DIRECTION</span></div></div>
+  </div>
+   </div>
+  </div>
+  <div class="case-bottom">
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>Campaign assignment became <strong>4.5× faster</strong>, substantially reducing the time required to process large employee populations.</p><p style="margin-top:10px">The improvements addressed the strategic customer’s operational challenge while strengthening performance for other customers using the same workflow.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>At enterprise scale, performance shapes both whether a capability is practical to use and how customers perceive their software partner. A concern raised by one customer can therefore signal a broader product constraint, even when that customer runs the workflow infrequently.</p><p style="margin-top:10px">Addressing the underlying capability, rather than treating the concern as an isolated case, can create value across the wider customer base.</p></div></div>
+   </div>
+  </div>
+</section>
+
+<section class="slide case-study-06" style="align-items:flex-start;overflow-y:auto">
+ <div class="inner case-layout" style="margin:0 auto;transform:none">
+  <div class="case-head">
+   <div class="eyebrow reveal d1">LRN · Case study 06</div>
+   <h2 class="reveal d2">Add simplicity without removing flexibility</h2>
+   <div class="case-meta reveal d3"><span class="pill">Product simplification</span><span class="pill">AI strategy</span><span class="pill">Customer segmentation</span><span class="pill">SMB expansion</span></div>
+  </div>
+  <div class="case-main-grid">
+   <div class="case-panel problem-panel">
+    <div class="case-block reveal d3"><div class="label">The problem</div><p>Large enterprise customers valued LRN’s flexibility and configuration options and often had specialized resources to manage them.</p><p style="margin-top:10px">SMB customers typically had fewer specialized resources. Lower product adoption, higher support-query volumes, weaker sales in the SMB market, and feedback from lost opportunities indicated that the product’s complexity made it harder for these customers to understand, adopt, and reach value from its capabilities.</p><p style="margin-top:10px">The challenge was to simplify the experience for SMBs without removing the flexibility enterprise customers relied on.</p></div>
+   </div>
+   <div class="case-panel decision-panel">
+    <div class="case-block reveal d4"><div class="label">My product decisions</div><p>I combined evidence from segment-level sales, lost opportunities, product adoption, support patterns, and customer feedback to identify a usability problem—not a lack of product capability.</p><p style="margin-top:10px">I introduced an AI-powered experience integrated with LRN’s existing products and tools. It provided a simpler path to established capabilities without replacing existing workflows or removing configuration options.</p><p style="margin-top:10px">AI was the means of reducing complexity—not the reason to build the product. Although SMB performance surfaced the need, the simpler experience could create value for both SMB and enterprise customers.</p></div>
+   </div>
+   <div class="case-panel reasoning-panel">
+    <div class="case-visual reveal d4">
+   <div class="visual-label">PRODUCT REASONING</div><div class="visual-core"><div class="flow"><b>Product complexity constrained SMB adoption, supportability, and sales</b><span>PROBLEM</span></div><div class="flow"><b>Multiple signals showed that SMBs needed a simpler path to value</b><span>INSIGHT</span></div><div class="flow"><b>Add an integrated, AI-powered path to existing products and tools</b><span>DECISION</span></div><div class="flow"><b>Improve simplicity for both segments without removing flexibility</b><span>DIRECTION</span></div></div>
+  </div>
+   </div>
+  </div>
+  <div class="case-bottom">
+   <div class="case-block outcome-block reveal d5"><div class="label">Outcome</div><div class="outcome-highlight"><p>The initiative gave SMB customers a simpler way to complete tasks and access LRN’s existing product capabilities.</p><p style="margin-top:10px">Integrating AI with the broader platform preserved the flexibility valued by enterprise customers while making complex capabilities easier to use across both segments.</p><p style="margin-top:10px">The success of this first AI-powered experience also created confidence and a foundation for pursuing additional agentic-AI opportunities across the product.</p></div></div>
+   <div class="case-block lesson-block reveal d5"><div class="label">Product lesson</div><div class="lesson-highlight"><p>The same product can provide valuable flexibility to one customer segment while creating a barrier for another. Product decisions become stronger when sales outcomes, lost opportunities, adoption data, support demand, and customer feedback are evaluated together.</p><p style="margin-top:10px">AI can create meaningful value by simplifying how customers use an established product without reducing its underlying capabilities.</p><p style="margin-top:10px">A successful first AI experience can create more than immediate customer value. It builds evidence, organizational confidence, and a product foundation for pursuing broader, higher-value agentic-AI opportunities.</p></div></div>
+   </div>
+  </div>
 </section>
 
 <section class="slide case-study-07" style="align-items:flex-start;overflow-y:auto">
@@ -718,6 +733,30 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
 .case-menu-number{padding-top:2px;color:var(--accent);font:11px ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em}
 .case-menu-title{display:block;font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.16;color:var(--paper)}
 .case-menu-skills{display:block;margin-top:8px;color:#aaa59d;font:8px/1.55 ui-monospace,SFMono-Regular,monospace;letter-spacing:.11em;text-transform:uppercase}
+.technical-deep-dive-trigger{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 20px;width:100%;padding:18px 20px;border:1px solid rgba(208,181,106,.48);border-radius:3px;background:rgba(208,181,106,.055);color:var(--paper);text-align:left;cursor:pointer}
+.technical-deep-dive-trigger span{grid-column:1;color:rgb(208,181,106);font:9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.16em}
+.technical-deep-dive-trigger strong{grid-column:1;font-family:Georgia,"Times New Roman",serif;font-size:clamp(18px,1.5vw,23px);font-weight:400;line-height:1.18}
+.technical-deep-dive-trigger i{grid-column:2;grid-row:1 / span 2;align-self:center;color:rgb(208,181,106);font:8px ui-monospace,SFMono-Regular,monospace;letter-spacing:.14em;font-style:normal}
+.technical-deep-dive-trigger:hover,.technical-deep-dive-trigger:focus-visible{outline:none;background:rgba(208,181,106,.11);border-color:rgb(208,181,106)}
+.deep-dive-modal{position:fixed;inset:0;z-index:85;visibility:hidden;pointer-events:none}
+.deep-dive-modal.open{visibility:visible;pointer-events:auto}
+.deep-dive-backdrop{position:absolute;inset:0;width:100%;height:100%;border:0;background:rgba(8,10,14,.64);opacity:0;transition:opacity .28s ease;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.deep-dive-modal.open .deep-dive-backdrop{opacity:1}
+.deep-dive-panel{position:absolute;left:50%;top:50%;width:min(920px,calc(100% - 48px));max-height:calc(100% - 48px);overflow-y:auto;padding:clamp(26px,4vw,48px);border:1px solid rgba(243,240,232,.16);border-radius:4px;background:rgba(20,22,28,.97);transform:translate(-50%,-46%) scale(.98);opacity:0;transition:transform .35s var(--ease),opacity .25s ease;-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px)}
+.deep-dive-modal.open .deep-dive-panel{transform:translate(-50%,-50%) scale(1);opacity:1}
+.deep-dive-head{display:flex;align-items:flex-start;justify-content:space-between;gap:28px;padding-bottom:24px;border-bottom:1px solid rgba(243,240,232,.14)}
+.deep-dive-kicker{margin-bottom:12px;color:rgb(208,181,106);font:9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.17em;text-transform:uppercase}
+.deep-dive-head h2{max-width:700px;font-size:clamp(34px,4.2vw,58px);line-height:.94}
+.deep-dive-close{border:0;padding:4px 0;background:transparent;color:#aaa59d;cursor:pointer;font:9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.16em}
+.deep-dive-close:hover,.deep-dive-close:focus-visible{color:var(--accent);outline:none}
+.deep-dive-section{position:relative;margin-top:28px;padding-left:22px;border-left:1px solid rgba(243,240,232,.18)}
+.deep-dive-section .label{margin-bottom:12px;color:var(--accent);font:10px ui-monospace,SFMono-Regular,monospace;letter-spacing:.16em;text-transform:uppercase}
+.deep-dive-section p,.deep-dive-section li{color:#d0cdc7;font-size:14px;line-height:1.58}
+.deep-dive-section p+p,.deep-dive-section ul+p{margin-top:10px}.deep-dive-section ul{margin:10px 0 0;padding-left:20px}.deep-dive-section li+li{margin-top:7px}
+.deep-dive-section:nth-of-type(2){border-left-color:rgb(216,166,172)}.deep-dive-section:nth-of-type(2) .label{color:rgb(216,166,172)}
+.deep-dive-section:nth-of-type(3){border-left-color:rgb(186,200,247)}.deep-dive-section:nth-of-type(3) .label{color:rgb(186,200,247)}
+.deep-dive-section:nth-of-type(4){border-left-color:rgb(167,197,165)}.deep-dive-section:nth-of-type(4) .label{color:rgb(167,197,165)}
+.deep-dive-skills{border-left-color:rgb(208,181,106)!important}.deep-dive-skills .label{color:rgb(208,181,106)!important}.deep-dive-skills p{font:9px/1.7 ui-monospace,SFMono-Regular,monospace;letter-spacing:.12em;text-transform:uppercase}
 .top{
  top:0;left:0;right:0;
  padding:23px clamp(20px,4vw,64px) 13px;
@@ -772,6 +811,10 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
  .case-menu-panel{width:100%;padding:24px 22px 38px;border-left:0}
  .case-menu-head h2{font-size:42px}.case-menu-intro{font-size:13px;margin-top:17px}
  .case-menu-item{padding:15px 12px}.case-menu-title{font-size:18px}
+ .technical-deep-dive-trigger{padding:16px;grid-template-columns:1fr}.technical-deep-dive-trigger i{grid-column:1;grid-row:auto;margin-top:3px}
+ .deep-dive-panel{left:0;top:0;width:100%;height:100%;max-height:none;border:0;border-radius:0;padding:24px 22px 38px;transform:translateY(100%);opacity:1}
+ .deep-dive-modal.open .deep-dive-panel{transform:translateY(0)}
+ .deep-dive-head h2{font-size:38px}.deep-dive-section{margin-top:24px}.deep-dive-section p,.deep-dive-section li{font-size:13px}
  .page-number{right:14px;bottom:25px;font-size:110px}
  .stage:after{display:none}
  .case-index,.bottomhint{display:none!important}
@@ -839,6 +882,19 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
 
 <style>
 /* Mobile sections retain their natural size and scroll within the paged stage. */
+.featured-slide .inner{max-width:1180px}
+.featured-slide h2{max-width:840px}
+.featured-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:30px}
+.featured-card{min-width:0;min-height:122px;padding:20px 24px;text-align:left;color:var(--text);border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));cursor:pointer;display:grid;grid-template-columns:56px minmax(250px,.9fr) minmax(360px,1.35fr);gap:22px;align-items:center;transition:border-color .25s ease,background .25s ease,transform .25s ease}
+.featured-card:hover,.featured-card:focus-visible{border-color:rgba(141,240,208,.6);background:rgba(141,240,208,.07);transform:translateY(-3px);outline:none}
+.featured-number{font:11px ui-monospace,SFMono-Regular,monospace;letter-spacing:.14em;color:var(--accent)}
+.featured-card strong{font-size:clamp(21px,1.75vw,29px);line-height:1.08;letter-spacing:-.035em;margin:0}
+.featured-card small{font:10px/1.65 ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.featured-note{margin-top:24px;color:var(--muted);font-size:13px}
+@media(max-width:900px){
+ .featured-card{min-height:0;grid-template-columns:42px 1fr;gap:10px 16px;padding:18px 20px}
+ .featured-card small{grid-column:2}
+}
 @media(max-width:820px){
  .stage{touch-action:pan-y pinch-zoom}
  .slide{overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:contain;
@@ -857,8 +913,8 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
  dots=document.getElementById('dots'), pageNum=document.getElementById('pageNumber'),
  cursor=document.getElementById('cursor'), dot=document.getElementById('dot'),
  menuRoot=document.getElementById('caseMenu'), menuTrigger=document.getElementById('caseMenuTrigger'),
- menuList=document.getElementById('caseMenuList');
- const names=['SCOPE','MY STORY','CUSTOMER DISCOVERY · API PRODUCT STRATEGY · PLATFORM THINKING · GROWTH STRATEGY','CUSTOMER SEGMENTATION · PRODUCT SIMPLIFICATION · AI PRODUCT STRATEGY · CUSTOMER EXPERIENCE','ROOT-CAUSE ANALYSIS · PRODUCT JUDGMENT · CROSS-PRODUCT LEADERSHIP · CUSTOMER EXPERIENCE','ROADMAP PRIORITIZATION · TECHNICAL COLLABORATION · SYSTEMS THINKING · ENTERPRISE PRODUCT MANAGEMENT','0→1 PRODUCT DEVELOPMENT · PLATFORM STRATEGY · INFLUENCE WITHOUT AUTHORITY · INCREMENTAL DELIVERY · ROLLOUT STRATEGY','PRODUCT JUDGMENT · BUY VS. BUILD · TECHNICAL ANALYSIS · REPRIORITIZATION · ROADMAP ADJUSTMENT','0→1 PRODUCT DEVELOPMENT · PLATFORM PRODUCT MANAGEMENT · DOMAIN MODELLING · SYSTEMS THINKING','AI PRODUCT STRATEGY · DATA-PRODUCT MANAGEMENT · WORKFLOW OPTIMIZATION · PRODUCT JUDGMENT','PRODUCT STRATEGY · PRODUCT JUDGMENT · PRIORITIZATION · MARKET ANALYSIS','PRODUCT INTEGRATION · CUSTOMER JOURNEY DESIGN · CUSTOMER EXPERIENCE · SYSTEMS THINKING','FIELD DISCOVERY · CROSS-FUNCTIONAL LEADERSHIP · WORKFLOW DESIGN · CUSTOMER EXPERIENCE · ADOPTION STRATEGY','SYNTHESIS'];
+ menuList=document.getElementById('caseMenuList'), deepDiveModal=document.getElementById('licensingDeepDive');
+ const names=['SCOPE','FEATURED CASE STUDIES','0→1 PRODUCT DEVELOPMENT · PLATFORM STRATEGY · INFLUENCE WITHOUT AUTHORITY · DISTRIBUTED SYSTEMS THINKING · TRADE-OFF ANALYSIS · CROSS-FUNCTIONAL ALIGNMENT · INCREMENTAL DELIVERY · ROLLOUT STRATEGY','PRODUCT JUDGMENT · BUY VS. BUILD · TECHNICAL ANALYSIS · REPRIORITIZATION · ROADMAP ADJUSTMENT','CUSTOMER DISCOVERY · API PRODUCT STRATEGY · PLATFORM THINKING · GROWTH STRATEGY','ROOT-CAUSE ANALYSIS · PRODUCT JUDGMENT · CROSS-PRODUCT LEADERSHIP · CUSTOMER EXPERIENCE','ROADMAP PRIORITIZATION · TECHNICAL COLLABORATION · SYSTEMS THINKING · ENTERPRISE PRODUCT MANAGEMENT','CUSTOMER SEGMENTATION · PRODUCT SIMPLIFICATION · AI PRODUCT STRATEGY · CUSTOMER EXPERIENCE','0→1 PRODUCT DEVELOPMENT · PLATFORM PRODUCT MANAGEMENT · DOMAIN MODELLING · SYSTEMS THINKING','AI PRODUCT STRATEGY · DATA-PRODUCT MANAGEMENT · WORKFLOW OPTIMIZATION · PRODUCT JUDGMENT','PRODUCT STRATEGY · PRODUCT JUDGMENT · PRIORITIZATION · MARKET ANALYSIS','PRODUCT INTEGRATION · CUSTOMER JOURNEY DESIGN · CUSTOMER EXPERIENCE · SYSTEMS THINKING','FIELD DISCOVERY · CROSS-FUNCTIONAL LEADERSHIP · WORKFLOW DESIGN · CUSTOMER EXPERIENCE · ADOPTION STRATEGY','SYNTHESIS'];
  const mobile=matchMedia('(max-width:820px)');
 
  function menuIsOpen(){return menuRoot&&menuRoot.classList.contains('open')}
@@ -897,6 +953,23 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
  menuRoot?.querySelector('.case-menu-backdrop')?.addEventListener('click',()=>closeMenu());
  menuRoot?.querySelector('.case-menu-close')?.addEventListener('click',()=>closeMenu());
 
+ function deepDiveIsOpen(){return deepDiveModal&&deepDiveModal.classList.contains('open')}
+ function openDeepDive(trigger){
+  if(!deepDiveModal)return;
+  deepDiveModal._returnFocus=trigger||document.activeElement;
+  deepDiveModal.classList.add('open');deepDiveModal.setAttribute('aria-hidden','false');
+  deepDiveModal.querySelector('.deep-dive-close')?.focus();
+ }
+ function closeDeepDive(returnFocus=true){
+  if(!deepDiveModal)return;
+  deepDiveModal.classList.remove('open');deepDiveModal.setAttribute('aria-hidden','true');
+  if(returnFocus&&deepDiveModal._returnFocus?.focus)deepDiveModal._returnFocus.focus();
+ }
+ function overlayIsOpen(){return menuIsOpen()||deepDiveIsOpen()}
+ document.querySelectorAll('.technical-deep-dive-trigger').forEach(trigger=>trigger.addEventListener('click',()=>openDeepDive(trigger)));
+ deepDiveModal?.querySelector('.deep-dive-backdrop')?.addEventListener('click',()=>closeDeepDive());
+ deepDiveModal?.querySelector('.deep-dive-close')?.addEventListener('click',()=>closeDeepDive());
+
  function placeReasoning(layout){
   const head=layout.querySelector('.case-head');
   const reasoning=layout.querySelector('.reasoning-panel');
@@ -932,6 +1005,8 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
     main.appendChild(skills);
    }
   }
+  const deepDiveLink=main&&main.querySelector('.technical-deep-dive-trigger');
+  if(deepDiveLink)main.appendChild(deepDiveLink);
   placeReasoning(layout);
  });
  const refreshReasoningOrder=()=>{document.querySelectorAll('.case-layout').forEach(placeReasoning);update()};
@@ -997,8 +1072,17 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
  }
  renderDots();
  renderCaseMenu();
+ document.querySelectorAll('.featured-card[data-case-number]').forEach(card=>{
+  const target=document.querySelector(`.case-study-${card.dataset.caseNumber}`);
+  const targetIndex=slides.indexOf(target);
+  const skills=card.querySelector('small');
+  if(skills&&targetIndex>=0)skills.textContent=names[targetIndex]||skills.textContent;
+  card.addEventListener('click',()=>{
+   if(targetIndex>=0)goTo(targetIndex);
+  });
+ });
  addEventListener('wheel',e=>{
-  if(menuIsOpen())return;
+  if(overlayIsOpen())return;
   if(mobile.matches){
    if(wheelLocked){e.preventDefault();return;}
    if(!canLeave(e.deltaY)){boundaryDistance=0;return;}
@@ -1028,13 +1112,13 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
   }
  },{passive:false});
  addEventListener('touchstart',e=>{
-  if(menuIsOpen()){touchStartY=null;return}
+  if(overlayIsOpen()){touchStartY=null;return}
   touchStartY=e.touches.length===1?e.touches[0].clientY:null;
   touchScrollStart=slides[current].scrollTop;
  },{passive:true});
  addEventListener('touchcancel',()=>{touchStartY=null},{passive:true});
  addEventListener('touchend',e=>{
-  if(menuIsOpen()){touchStartY=null;return}
+  if(overlayIsOpen()){touchStartY=null;return}
   if(touchStartY===null)return;
   const delta=touchStartY-e.changedTouches[0].clientY;
   touchStartY=null;
@@ -1047,6 +1131,10 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
   if(Math.abs(delta)>=50)goTo(current+(delta>0?1:-1));
  },{passive:true});
  addEventListener('keydown',e=>{
+  if(deepDiveIsOpen()){
+   if(e.key==='Escape'){e.preventDefault();closeDeepDive()}
+   return;
+  }
   if(menuIsOpen()){
    if(e.key==='Escape'){e.preventDefault();closeMenu()}
    return;
