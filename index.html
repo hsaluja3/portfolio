@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harpreet Saluja - Product Portfolio</title>
+<title>NAME - Product Portfolio</title>
 <meta name="description" content="A product leadership portfolio told through product case studies.">
 <style>
 :root{
@@ -124,7 +124,7 @@ h2{font-size:clamp(38px,5vw,68px)}
 <div id="app">
 <div class="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="grid-bg"></div></div>
 <div id="cursor"></div><div id="dot"></div>
-<header class="top"><strong>HARPREET SALUJA</strong><div class="top-actions"><button class="case-menu-trigger" id="caseMenuTrigger" type="button" aria-expanded="false" aria-controls="caseMenu">CASE STUDIES</button></div></header>
+<header class="top"><strong>NAME</strong><div class="top-actions"><button class="case-menu-trigger" id="caseMenuTrigger" type="button" aria-expanded="false" aria-controls="caseMenu">CASE STUDIES</button></div></header>
 <div class="case-menu" id="caseMenu" aria-hidden="true">
  <button class="case-menu-backdrop" type="button" aria-label="Close case studies menu"></button>
  <aside class="case-menu-panel" role="dialog" aria-modal="true" aria-labelledby="caseMenuTitle">
@@ -789,23 +789,6 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
  color:var(--accent)!important;font-size:10px!important;
  letter-spacing:.16em!important;margin-bottom:13px!important;
 }
-.case-main-grid>.mobile-skills{
- --skills-signal:rgb(208,181,106);
- display:block;position:relative;margin:2px 0;padding:0 0 0 22px!important;
- border:0!important;background:transparent!important;
-}
-.case-main-grid>.mobile-skills:before{
- content:"";position:absolute;display:block;left:0;top:0;bottom:0;width:14px;
- box-sizing:border-box;border-left:1px solid var(--skills-signal);
- border-bottom:1px solid var(--skills-signal);border-bottom-left-radius:13px;
-}
-.case-main-grid>.mobile-skills .label{
- color:var(--skills-signal)!important;font-size:10px;letter-spacing:.16em;margin-bottom:11px;
-}
-.case-main-grid>.mobile-skills p{
- color:#d0cdc7;font:10px/1.7 ui-monospace,SFMono-Regular,monospace;
- letter-spacing:.12em;text-transform:uppercase;
-}
 @media(max-width:820px){
  .top{top:0;left:0;right:0;padding:17px 20px 12px}
  .top-actions{gap:0}.top-actions>span{display:none}
@@ -859,23 +842,6 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
  .case-main-grid>.reasoning-panel .flow span{
   grid-column:1;grid-row:1;margin:0!important;padding:0!important;white-space:nowrap;
   color:var(--reasoning-signal)!important;
- }
- .case-main-grid>.mobile-skills{
-  --skills-signal:rgb(208,181,106);
-  display:block;position:relative;margin:2px 0;padding:0 0 0 22px!important;
-  border:0!important;background:transparent!important;
- }
- .case-main-grid>.mobile-skills:before{
-  content:"";position:absolute;display:block;left:0;top:0;bottom:0;width:14px;
-  box-sizing:border-box;border-left:1px solid var(--skills-signal);
-  border-bottom:1px solid var(--skills-signal);border-bottom-left-radius:13px;
- }
- .case-main-grid>.mobile-skills .label{
-  color:var(--skills-signal)!important;font-size:10px;letter-spacing:.16em;margin-bottom:11px;
- }
- .case-main-grid>.mobile-skills p{
-  color:#d0cdc7;font:10px/1.7 ui-monospace,SFMono-Regular,monospace;
-  letter-spacing:.12em;text-transform:uppercase;
  }
 }
 
@@ -991,20 +957,17 @@ h2,.case-head h2{max-width:1100px;font-size:clamp(44px,5.8vw,88px);line-height:.
    [...bottom.children].forEach(section=>main.appendChild(section));
    bottom.remove();
   }
-  if(main&&!main.querySelector('.mobile-skills')){
-   const slide=layout.closest('.slide');
-   const skillText=names[slides.indexOf(slide)];
-   if(skillText){
-    const skills=document.createElement('div');
-    skills.className='case-block mobile-skills';
-    const label=document.createElement('div');
-    label.className='label';
-    label.textContent='Product Management Skills Applied';
-    const copy=document.createElement('p');
-    copy.textContent=skillText;
-    skills.append(label,copy);
-    main.appendChild(skills);
-   }
+  const slide=layout.closest('.slide');
+  const skillText=names[slides.indexOf(slide)];
+  const meta=layout.querySelector('.case-meta');
+  if(meta&&skillText){
+   meta.innerHTML='';
+   skillText.split('·').map(skill=>skill.trim()).filter(Boolean).forEach(skill=>{
+    const pill=document.createElement('span');
+    pill.className='pill';
+    pill.textContent=skill;
+    meta.appendChild(pill);
+   });
   }
   const deepDiveLink=main&&main.querySelector('.technical-deep-dive-trigger');
   if(deepDiveLink)main.appendChild(deepDiveLink);
